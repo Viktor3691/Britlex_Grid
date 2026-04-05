@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+
+}
+*, *::before, *::after {
+    block-size: inherit;
+}
+
+body {
+    max-width: 2560px;
+    background: #ffffff
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+/* НАЧАЛО: SECTION Desktop HD   */
+.desktop {
+width: 1600px;
+height: 4642px;
+margin: 0 auto;
+}
+
+.container {
+margin: 0;
+padding: 0 120px;
+}
+/* КОНЕЦ: SECTION Desktop HD */
+
+/* НАЧАЛО header  */
+
+/* END header  */
