@@ -10,16 +10,21 @@ body {
     max-width: 2560px;
     background: #ffffff
 }
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 
 :root {
   --font-family: "Poppins", sans-serif;
 }
+
 
 /* НАЧАЛО: SECTION Desktop HD   */
 .desktop {
 width: 1600px;
 height: 4642px;
 margin: 0 auto;
+background: #f3c5c5;
 }
 
 .container {
@@ -28,13 +33,16 @@ padding: 0 120px;
 }
 /* КОНЕЦ: SECTION Desktop HD */
 
-/* НАЧАЛО header  */
+/*1 НАЧАЛО header  *//* Section 1 */
 .header {
 width: 1600px;
-height: 140px;
+height: 892px;
+box-sizing: border-box;
 background: #ffffff;
 }
+
 .nav_flex {
+    height: 140px;
 display: flex;
 }
 .nav_TheTitle {
@@ -64,7 +72,7 @@ color: #263238;
 }
 .text_Home {
 height: 20px;
-padding-right: 40px;
+padding-right: 36px;
 }
 .text_Skills {
 height: 20px;
@@ -72,11 +80,11 @@ padding-right: 29px;
 }
 .text_AboutUs {
 height: 20px;
-padding-right: 59px;
+padding-right: 57px;
 }
 .text_Pricing {
 height: 20px;
-padding-right: 32px;
+padding-right: 30px;
 }
 .text_Contacts {
 height: 20px;
@@ -111,14 +119,12 @@ color: #000000;
 }
 
 
-
-
 .cover-box_flex {
  display: flex;
  height: 662px;
 }
 .cover-box_text {
-width: 700px;
+width: 660px;
 height: 660px;
 }
 
@@ -126,12 +132,14 @@ height: 660px;
 display: flex;
 width: 660px;
 height: 350px;
+
+padding-left: 2px;
 }
 .box-text_img-lamp {
 width: 132px;
 height: 132px;
 padding-top: 172px;
-padding-left: 41px;
+padding-left: 36px;
 }
 
 .cover-box_text-h1 {
@@ -183,22 +191,28 @@ color: #fff;
 .cover-box_img {
 width: 650px;
 height: 660px;
-margin-top: 34px;
+margin-top: 35px;
+margin-left: 38px;
  background-image: url(../images/cover.svg);
 }
+
 /* END header  */
 
-/* НАЧАЛО section  Skills */
-.skills {
-    height: 300px;
-    background: #e05555;
-    margin: 0 auto;
-}
 
+/*2 НАЧАЛО skills  *//* Section 2 */
+.skills {
+width: 1600px;
+height: 1271px;
+box-sizing: border-box;
+background: #caeed2;
+}
 .skills h2{
 width: 124px;
 height: 80px;
 
+padding-left: 617px;
+padding-top: 46px;
+
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
@@ -209,23 +223,233 @@ line-height: 80px;
 color: #000000;
 }
 
+/* Grid */
+.skills__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+  "one two three"
+  "one four four";
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.speaking {
+  grid-area: one;
+}
+.writing {
+  grid-area: two;
+}
+.reading {
+  grid-area: three;
+}
+.listening {
+  grid-area: four;
+  flex-direction: row;
+}
+.listening .skills__grid-image {
+  order: 1;
+}
+/* Grid */
 
-/* END section  Skills */
-
-
-/* Skills */
-
-position: absolute;
-width: 124px;
-height: 80px;
-left: 738px;
-top: 940px;
-
+/* общие */
+.skills__grid-item {
+    background: #ffffff;
+}
+ .skills__grid-content h3 {
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 48px;
+font-size: 30px;
 line-height: 80px;
-/* identical to box height, or 167% */
+/* identical to box height, or 267% */
 
-color: #000000;
+color: #263238;
+ }
+.skills__grid-content p {
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #8F95A5;
+}
+.skills__grid-content button {
+width: 230px;
+height: 60px;
+
+background: #263238;
+border-radius: 5px;
+}
+
+.btn__skills {
+width: 103px;
+height: 27px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+/*  Элемент 1 */
+.speaking .skills__grid-item {
+width: 434px;
+height: 531px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.speaking .skills__grid-image {
+width: 390px;
+height: 390px;
+}
+.speaking .skills__grid-content  {
+width: 435px;
+height: 391px;
+}
+
+
+.speaking .skills__grid-content h3 {
+width: 144px;
+height: 80px;
+}
+
+.speaking .skills__grid-content  p {
+width: 347px;
+height: 192px;
+}
+
+
+
+/*  Элемент 2 */
+
+.writing .skills__grid-item {
+width: 434px;
+height: 531px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.writing .skills__grid-image {
+width: 293px;
+height: 293px;
+}
+
+.writing .skills__grid-content h3 {
+width: 112px;
+height: 80px;
+}
+.writing .skills__grid-content_writing p{
+width: 374px;
+height: 70px;
+}
+
+/*  Элемент 3 */
+
+.reading .skills__grid-item {
+width: 434px;
+height: 531px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.reading .skills__grid-image {
+width: 293px;
+height: 293px;
+}
+
+.reading .skills__grid-content h3 {
+width: 112px;
+height: 80px;
+}
+.reading .skills__grid-content_writing p{
+width: 374px;
+height: 70px;
+}
+
+/*  Элемент 4 */
+
+.listening .skills__grid-item {
+width: 434px;
+height: 531px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.listening .skills__grid-image {
+width: 293px;
+height: 293px;
+}
+
+.listening .skills__grid-content h3 {
+width: 112px;
+height: 80px;
+}
+.listening .skills__grid-content_writing p{
+width: 374px;
+height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+/* END skills  */
+
+
+/*3 НАЧАЛО About Us  *//* Section 3 */
+.aboutUs {
+width: 1600px;
+height: 761px;
+box-sizing: border-box;
+background: #5eeb65;
+}
+
+/* END About Us  */
+
+
+/*4 НАЧАЛО Pricing  *//* Section 4 */
+.pricing {
+width: 1600px;
+height: 913px;
+box-sizing: border-box;
+background: #6795f8;
+}
+
+/* END Pricing  */
+
+
+/*5 НАЧАЛО Contact Us  *//* Section 5 */
+.contactUs {
+    width: 1600px;
+height: 668px;
+box-sizing: border-box;
+background: #e757db;
+}
+
+/* END Contact Us  */
+
+
+/*6 НАЧАЛО footer  *//* Section 6 */
+.footer {
+    width: 1600px;
+height: 137px;
+box-sizing: border-box;
+ background: #f0ed3a;
+}
+
+/* END footer  */
