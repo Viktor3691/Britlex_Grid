@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 {
 width: 1600px;
 height: 4642px;
 margin: 0 auto;
-background: #f3c5c5;
+background: #F5F5F5;
 }
 
 .container {
@@ -204,7 +204,7 @@ margin-left: 38px;
 width: 1600px;
 height: 1271px;
 box-sizing: border-box;
-background: #caeed2;
+background: #ffffff;
 }
 .skills h2{
 width: 124px;
@@ -226,12 +226,13 @@ color: #000000;
 /* Grid */
 .skills__grid {
   display: grid;
-  gap: 30px;
+  gap: 18px;
   grid-template-areas:
   "one two three"
   "one four four";
   justify-content: space-evenly;
-  align-items: stretch;
+    align-items: stretch;
+  align-content: start;
 }
 .speaking {
   grid-area: one;
@@ -246,9 +247,9 @@ color: #000000;
   grid-area: four;
   flex-direction: row;
 }
-.listening .skills__grid-image {
+/* .listening .skills__grid-image {
   order: 1;
-}
+} */
 /* Grid */
 
 /* Элемент 1 */
@@ -269,7 +270,6 @@ height: 390px;
 margin-top: 37px;
 margin-left: 24px;
 }
-
 
 .skills-content_speaking {
 width: 435px;
@@ -312,16 +312,16 @@ width: 230px;
 height: 60px;
 margin-top: 20px;
 margin-left: 44px;
-
+text-align: center;
 
 background: #263238;
 border-radius: 5px;
+cursor: pointer;
 }
 .btn-text {
  width: 103px;
 height: 27px;
-margin-top: 2px;
-margin-left: 57px;
+margin: auto;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -332,7 +332,6 @@ line-height: 27px;
 
 color: #FFFFFF;
 }
-
 
 /*  Элемент 2 */
 .skills-item2 {
@@ -345,22 +344,21 @@ border-radius: 10px;
 }
 
 .skills-image_writing {
+position: absolute;
 width: 293px;
 height: 293px;
-
-padding-left: 110px;
+margin-left: 116px;
 }
-
 
 .skills-content_writing {
-width: 380px;
-height: 250px;
+width: 400px;
+height: 80px;
 }
 .skills-content_writing h3 {
-width: 112px;
-height: 80px;
-
-font-family: 'Poppins';
+  height: 40px;
+  padding-top: 255px;
+  padding-left: 35px;
+  font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
@@ -370,10 +368,11 @@ line-height: 80px;
 color: #263238;
 }
 .skills-content_writing p {
-width: 377px;
-height: 78px;
-
-font-family: 'Poppins';
+  height: 65px;
+  margin-top: 0;
+  padding-top: 31px;
+  padding-left: 29px;
+  font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -382,15 +381,16 @@ line-height: 24px;
 color: #8F95A5;
 }
 
-
 .btn__skills_writing {
-width: 230px;
+width: 218px;
 height: 60px;
+margin-top: 23px;
+margin-left: 35px;
 
 background: #263238;
 border-radius: 5px;
+cursor: pointer;
 }
-
 
 /*  Элемент 3 */
 .skills-item3 {
@@ -403,6 +403,9 @@ border-radius: 10px;
 }
 
 .skills-image_reading {
+  position: relative;
+margin-top: 11px;
+
 width: 371px;
 height: 247px;
 }
@@ -414,7 +417,9 @@ height: 250px;
 
 .skills-content_reading h3 {
 width: 127px;
-height: 80px;
+height: 45px;
+
+padding-left: 30px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -429,6 +434,8 @@ color: #263238;
 .skills-content_reading p {
 width: 375px;
 height: 72px;
+padding-top: 4px;
+padding-left: 31px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -440,11 +447,14 @@ color: #8F95A5;
 }
 
 .btn__skills_reading {
-width: 230px;
+width: 218px;
 height: 60px;
+margin-top: 19px;
+margin-left: 34px;
 
 background: #263238;
 border-radius: 5px;
+cursor: pointer;
 }
 
 /*  Элемент 4 */
@@ -463,15 +473,20 @@ border-radius: 10px;
 .skills-image_listening {
 width: 382px;
 height: 255px;
+
+padding-top: 48px;
+padding-left: 35px;
 }
 
 .skills-content_listening {
-width: 395px;
+width: 345px;
 height: 80px;
 }
 .skills-content_listening h3 {
 width: 137px;
-height: 80px;
+height: 55px;
+padding-top: 48px;
+padding-left: 11px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -484,7 +499,8 @@ color: #263238;
 }
 .skills-content_listening p {
 width: 390px;
-height: 87px;
+height: 70px;
+margin-top: 20px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -496,11 +512,14 @@ color: #8F95A5;
 }
 
 .btn__skills_listening {
-width: 230px;
+width: 218px;
 height: 60px;
+margin-top: 10px;
+margin-left: 8px;
 
 background: #263238;
 border-radius: 5px;
+cursor: pointer;
 }
 
 
