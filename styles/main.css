@@ -856,56 +856,90 @@ color: #546269;
     width: 1600px;
 height: 668px;
 box-sizing: border-box;
-background: #f0d3ed;
+background: #ffffff;
 }
 .container-contactUs {
   margin: 0;
 padding: 0 110px;
 }
 .contactUs-flex {
+  height: 650px;
  display: flex;
 }
 
 .contactUs-img {
   width: 477px;
 height: 429px;
+
+padding-top: 91px;
 }
 
 .contactUs-content {
 height: 500px;
 }
+.contactUs-content h3 {
+  height: 20px;
+  padding-top: 125px;
+  padding-left: 105px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 167%;
+color: #000;
+}
+.contactUs-content p {
+  height: 50px;
+  padding-top: 81px;
+  padding-left: 105px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #8f95a5;
+}
 .contactUs-form {
-height: 500px;
+height: 100px;
+margin-top: 57px;
+margin-left: 108px;
+}
+.contactUs-form input {
+  width: 450px;
+  height: 80px;
+
+  border-radius: 10px;
+  color: #000000;
+}
+.contactUs-form button {
+width: 264px;
+height: 80px;
+
+border-radius: 10px;
+background: #263238;
+cursor: pointer;
+
+
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+color: #fff;
 }
 
+.contactUs-form button:hover {
+  background: #03537e;
+}
+.contactUs_line {
+width: 1338px;
+height: 1px;
 
+padding-top: 5px;
+padding-left: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
+background: #c4c4c4;
+}
 
 /* END Contact Us  */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*6 НАЧАЛО footer  *//* Section 6 */
@@ -913,7 +947,35 @@ height: 500px;
     width: 1600px;
 height: 137px;
 box-sizing: border-box;
- background: #f0ed3a;
+ background: #ffffff;
 }
+.footer-flex {
+  display: flex;
+}
+.footer_TheTitle {
+    height: 30px;
+    padding-top: 27px;
+padding-left: 9px;
+padding-right: 253px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #000;
+}
+.footer_TheTitle span {
+color: #939393;
+}
+.footer-text {
+height: 10px;
+padding-top: 47px;
+padding-left: 354px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #8f95a5;
+}
+
+
 
 /* END footer  */
