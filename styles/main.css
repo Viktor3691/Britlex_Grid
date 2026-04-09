@@ -8,7 +8,7 @@ html {
 
 body {
     max-width: 2560px;
-    background: #ffffff
+    background: #f5f2f2
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -16,8 +16,8 @@ h1,h2,h3,h4,h5,h6 {
 
 :root {
   --font-family: "Poppins", sans-serif;
-}
 
+}
 
 /* НАЧАЛО: SECTION Desktop HD   */
 .desktop {
@@ -90,8 +90,6 @@ padding-right: 30px;
 height: 20px;
 }
 
-
-
 .navbtn {
   width: 220px;
   height: 70px;
@@ -117,7 +115,6 @@ color: #000000;
 .navbtn:hover {
   background-color: #ebf0f1;
 }
-
 
 .cover-box_flex {
  display: flex;
@@ -195,9 +192,7 @@ margin-top: 35px;
 margin-left: 38px;
  background-image: url(../images/cover.svg);
 }
-
 /* END header  */
-
 
 /*2 НАЧАЛО skills  *//* Section 2 */
 .skills {
@@ -522,27 +517,112 @@ border-radius: 5px;
 cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* END skills  */
-
 
 /*3 НАЧАЛО About Us  *//* Section 3 */
 .aboutUs {
 width: 1600px;
 height: 761px;
 box-sizing: border-box;
-background: #5eeb65;
+background: #ffffff;
 }
+.aboutUs-flex {
+display: flex;
+padding-top: 91px;
+}
+.aboutUs-content {
+width: 790px;
+height: 500px;
+}
+.aboutUs-content h3 {
+width: 219px;
+height: 70px;
+padding-top: 38px;
+padding-left: 11px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 80px;
+/* identical to box height, or 167% */
+
+color: #000000;
+}
+.aboutUs-content p {
+width: 635px;
+height: 180px;
+padding-top: 12px;
+padding-left: 11px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #8f95a5;
+}
+
+.aboutUs-numbers_flex {
+ display: flex;
+justify-content: flex-start;
+ width: 635px;
+ height: 50px;
+ margin-top: 23px;
+}
+.numbers {
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height:10px;
+color: #2a3246;
+}
+.number_800 {
+  width: 150px;
+
+  padding-top: 52px;
+  padding-left: 11px;
+}
+.number_18 {
+  width: 150px;
+
+   padding-top: 52px;
+  padding-left: 124px;
+}
+.number_6 {
+    width: 150px;
+
+   padding-top: 52px;
+  padding-left: 105px;
+}
+
+.aboutUs-text p {
+  padding-top: 26px;
+  padding-left: 28px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+
+.aboutUs-content table {
+  width: 100%;
+  height: 50px;
+  margin-top: 33px;
+  margin-left: 25px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+
+.aboutUs-image {
+width: 500px;
+height: 500px;
+padding-top: 8px;
+padding-left: 51px;
+}
+
 
 /* END About Us  */
 
@@ -552,7 +632,220 @@ background: #5eeb65;
 width: 1600px;
 height: 913px;
 box-sizing: border-box;
-background: #6795f8;
+background: #ffffff;
+}
+
+.pricing h3 {
+  height: 20px;
+  padding-top: 28px;
+  padding-left: 597px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 167%;
+color: #000;
+}
+/* Grid */
+.pricing-grid {
+  display: grid;
+  gap: 2px;
+  grid-template-areas:
+  "one two three";
+  justify-content: space-evenly;
+    align-items: stretch;
+  align-content: start;
+}
+
+/* 1 элемент */
+.self-study {
+  width: 452px;
+  height: 850px;
+  grid-area: one;
+}
+.self-study_img {
+width: 311px;
+height: 311px;
+
+padding-top: 116px;
+padding-left: 36px;
+}
+.self-study_content {
+  height: 20px;
+
+}
+.self-study_content-h4 {
+  padding-top: 46px;
+  padding-left: 8px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 30px;
+letter-spacing: 0.04em;
+color: #263238;
+}
+.self-study_content-p {
+  padding-top: 25px;
+  padding-left: 11px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #8f95a5;
+}
+
+.self-study__btn {
+width: 240px;
+height: 45px;
+margin-top: 117px;
+margin-left: 9px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.self-study__btn:hover {
+  background-color: #ebf0f1;
+}
+
+.btn-text1 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+color: #263238;
+}
+.btn-text1 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #546269;
+}
+
+/* 2 элемент */
+.live {
+   width: 452px;
+    height: 850px;
+  grid-area: two;
+}
+.live_img {
+width: 391px;
+height: 283px;
+
+padding-top: 142px;
+padding-left: 30px;
+}
+.live_content {
+  height: 20px;
+
+}
+.live_content-h4 {
+  padding-top: 48px;
+  padding-left: 31px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 30px;
+letter-spacing: 0.02em;
+color: #263238;
+}
+.live_content-p {
+  padding-top: 27px;
+  padding-left: 32px;
+
+  line-height: 150%;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+.live__btn {
+width: 240px;
+height: 45px;
+margin-top: 121px;
+margin-left: 29px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.live__btn:hover {
+  background-color: #ebf0f1;
+}
+.btn-text2 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+color: #263238;
+}
+.btn-text2 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #546269;
+}
+
+/* 3 элемент */
+.personal {
+   width: 452px;
+    height: 850px;
+  grid-area: three;
+}
+.personal_img {
+width: 340px;
+height: 340px;
+
+padding-top: 114px;
+padding-left: 55px;
+}
+.personal_content {
+  height: 20px;
+
+}
+.personal_content-h4 {
+  padding-top: 13px;
+  padding-left: 6px;
+
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 30px;
+letter-spacing: 0.02em;
+line-height: 160%;
+color: #263238;
+}
+.personal_content-p {
+  padding-top: 33px;
+  padding-left: 6px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+.personal__btn {
+width: 240px;
+height: 45px;
+margin-top: 114px;
+margin-left: 5px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.personal__btn:hover {
+  background-color: #ebf0f1;
+}
+
+.btn-text3 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+color: #263238;
+}
+.btn-text3 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #546269;
 }
 
 /* END Pricing  */
@@ -563,10 +856,56 @@ background: #6795f8;
     width: 1600px;
 height: 668px;
 box-sizing: border-box;
-background: #e757db;
+background: #f0d3ed;
+}
+.container-contactUs {
+  margin: 0;
+padding: 0 110px;
+}
+.contactUs-flex {
+ display: flex;
 }
 
+.contactUs-img {
+  width: 477px;
+height: 429px;
+}
+
+.contactUs-content {
+height: 500px;
+}
+.contactUs-form {
+height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* END Contact Us  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*6 НАЧАЛО footer  *//* Section 6 */
