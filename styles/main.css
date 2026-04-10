@@ -28,8 +28,9 @@ background: #F5F5F5;
 }
 
 .container {
-margin: 0;
+margin: 0 auto;
 padding: 0 120px;
+background: #d3ecf3;
 }
 /* КОНЕЦ: SECTION Desktop HD */
 
@@ -976,6 +977,131 @@ font-size: 24px;
 color: #8f95a5;
 }
 
-
-
 /* END footer  */
+
+
+/* @media screen and (max-width: 1280px) {
+  .skills__grid {
+    grid-template-areas:
+    "one two"
+    "three four";
+  }
+  .listening {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .skills__grid {
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+  }
+} */
+
+
+/*@media  */
+
+@media screen and (max-width: 992px) {
+.container {
+width: 100%;
+padding: 0 78px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* }
+
+
+.header {
+width: 992px;
+height: 553px;
+
+}
+
+.skills {
+width: 992px;
+height: 788px;
+
+}
+
+.aboutUs {
+width: 992px;
+height: 472px;
+
+}
+
+.pricing {
+width: 992px;
+height: 566px;
+
+}
+
+.contactUs {
+    width: 992px;
+height: 414px;
+
+}
+
+.footer {
+    width: 992px;
+height: 85px;
+
+} */
+}
+
+
+/* .desktop {
+width: 1600px;
+height: 4642px;
+margin: 0 auto;
+background: #F5F5F5;
+}
+.header {
+width: 1600px;
+height: 892px;
+box-sizing: border-box;
+background: #ffffff;
+}
+.skills {
+width: 1600px;
+height: 1271px;
+box-sizing: border-box;
+background: #ffffff;
+}
+.aboutUs {
+width: 1600px;
+height: 761px;
+box-sizing: border-box;
+background: #ffffff;
+}
+/*4 НАЧАЛО Pricing  *//* Section 4 */
+.pricing {
+width: 1600px;
+height: 913px;
+box-sizing: border-box;
+background: #ffffff;
+}
+/*5 НАЧАЛО Contact Us  *//* Section 5 */
+.contactUs {
+    width: 1600px;
+height: 668px;
+box-sizing: border-box;
+background: #ffffff;
+}
+.footer {
+    width: 1600px;
+height: 137px;
+box-sizing: border-box;
+ background: #ffffff;
+} */
