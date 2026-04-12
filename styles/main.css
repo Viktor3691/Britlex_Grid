@@ -1013,12 +1013,25 @@ color: #8f95a5;
 /*@media  */
 
 
-/* Десктопы (1440px и больше) */
-@media (min-width: 1440px) {...}.
-
+/* Десктопы (1600px и больше) */
+@media (min-width: 1599.8px) {
+    .container {
+margin: 0 auto;
+padding: 0 120px;
+}
+}
 
 /* Ноутбуки (1200px – 1439px) */
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (max-width: 1200px) and (min-width: 1599px) {
+  .container {
+margin: 0 auto;
+padding: 0 108px;
+}
+}
+
+
+/* Ноутбуки (1200px – 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
   .container {
 margin: 0 auto;
 padding: 0 108px;
@@ -1041,24 +1054,24 @@ padding: 0 57px;
 }
 }
 
-/* Мобильные (480px – 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
+/* Мобильные (576px – 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
   .container {
 margin: 0 auto;
 padding: 0 36px;
 }
 }
 
-/* Мелкие мобильные (375px – 479px) */
-@media (min-width: 375px) and (max-width: 479px) {
+/* Мелкие мобильные (321px – 575px) */
+@media (min-width: 321px) and (max-width: 575px) {
   .container {
 margin: 0 auto;
 padding: 0 28px;
 }
 }
 
-/* Экстра-мелкие мобильные (до 375px) */
-@media (max-width: 374px) {
+/* Экстра-мелкие мобильные (до 319.5px) */
+@media (max-width: 319.5px) {
   .container {
 margin: 0 auto;
 padding: 0 10px;
