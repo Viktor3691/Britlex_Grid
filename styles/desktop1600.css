@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 .desktop {
 width: 1600px;
 height: 4642px;
-margin: 0 auto;
+margin: 0;
 background: #F5F5F5;
 }
 
@@ -1007,73 +1007,3 @@ color: #8f95a5;
 }
 
 /* END footer  */
-
-
-
-/*@media  */
-
-
-/* Десктопы (1600px и больше) */
-@media (min-width: 1599.8px) {
-    .container {
-margin: 0 auto;
-padding: 0 120px;
-}
-}
-
-/* Ноутбуки (1200px – 1439px) */
-@media (max-width: 1200px) and (min-width: 1599px) {
-  .container {
-margin: 0 auto;
-padding: 0 108px;
-}
-}
-
-
-/* Ноутбуки (1200px – 1599px) */
-@media (min-width: 1200px) and (max-width: 1599px) {
-  .container {
-margin: 0 auto;
-padding: 0 108px;
-}
-}
-
-/* Планшеты альбомные (992px – 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-margin: 0 auto;
-padding: 0 74px;
-}
-}
-
-/* Планшеты портретные (768px – 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-margin: 0 auto;
-padding: 0 57px;
-}
-}
-
-/* Мобильные (576px – 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
-  .container {
-margin: 0 auto;
-padding: 0 36px;
-}
-}
-
-/* Мелкие мобильные (321px – 575px) */
-@media (min-width: 321px) and (max-width: 575px) {
-  .container {
-margin: 0 auto;
-padding: 0 28px;
-}
-}
-
-/* Экстра-мелкие мобильные (до 319.5px) */
-@media (max-width: 319.5px) {
-  .container {
-margin: 0 auto;
-padding: 0 10px;
-}
-}
