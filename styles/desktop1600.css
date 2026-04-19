@@ -264,9 +264,9 @@ color: #000000;
   grid-area: four;
   flex-direction: row;
 }
-/* .listening .skills__grid-image {
+.listening .skills__grid-image {
   order: 1;
-} */
+}
 /* Grid */
 
 /* Элемент 1 */

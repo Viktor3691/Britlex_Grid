@@ -1,0 +1,332 @@
+/* НАЧАЛО: SECTION Desktop HD   */
+
+.desktop {
+width: 767px;
+height: 2840px;
+margin: 0 auto;
+background: #ffffff
+}
+.container {
+padding: 0 16px;
+margin: 0 auto;
+}
+.container-skills {
+  margin: 0 auto;
+padding: 030px;
+}
+
+/* КОНЕЦ: SECTION Desktop HD */
+
+
+/*1 НАЧАЛО header  *//* Section 1 */
+.header {
+height: 515px;
+background: #c6f5f5;
+}
+.nav_flex {
+display: flex;
+}
+.nav_TheTitle {
+height: 30px;
+
+font-family: var(--font-family);
+
+font-weight: 400;
+font-size: 30px;
+color: #000;
+}
+.nav_TheTitle span {
+color: #939393;
+}
+
+.nav767-img {
+    width: 30px;
+    height: 17px;
+background-image: url(/images/nav767.svg);
+}
+
+
+
+.nav-bar_flex {
+display: flex;
+}
+.nav-bar {
+ margin: 0 auto;
+}
+.text_Home {
+ margin: 0 auto;
+}
+.text_Skills {
+ margin: 0 auto;
+}
+.text_AboutUs {
+ margin: 0 auto;
+}
+.text_Pricing {
+ margin: 0 auto;
+}
+.text_Contacts {
+ margin: 0 auto;
+}
+.navbtn {
+ margin: 0 auto;
+}
+.cover-box_grid {
+ margin: 0 auto;
+}
+.cover-box_text {
+ margin: 0 auto;
+}
+.box-text_img-flex {
+ margin: 0 auto;
+}
+.cover-box_text-h1 {
+ margin: 0 auto;
+}
+.box-text_img-lamp {
+ margin: 0 auto;
+}
+.cover-box_text-p {
+ margin: 0 auto;
+}
+.cover-btn {
+ margin: 0 auto;
+}
+.cover-box_img {
+ margin: 0 auto;
+}
+/* END header  */
+
+
+/*2 НАЧАЛО skills  *//* Section 2 */
+.skills {
+height: 820px;
+background: #b5f5f5;
+}
+.container-skills {
+ margin: 0 auto;
+}
+.skills__grid {
+ margin: 0 auto;
+}
+.skills-item1 {
+ margin: 0 auto;
+}
+.speaking {
+ margin: 0 auto;
+}
+.skills-image_speaking {
+ margin: 0 auto;
+}
+.skills-content_speaking {
+ margin: 0 auto;
+}
+.btn__skills_speaking {
+ margin: 0 auto;
+}
+.btn-text {
+ margin: 0 auto;
+}
+.skills-item2 {
+ margin: 0 auto;
+}
+.writing {
+ margin: 0 auto;
+}
+.skills-image_writing {
+ margin: 0 auto;
+}
+.skills-content_writing {
+ margin: 0 auto;
+}
+.btn__skills_writing {
+ margin: 0 auto;
+}
+.skills-item3 {
+ margin: 0 auto;
+}
+.reading {
+ margin: 0 auto;
+}
+.skills-image_reading {
+ margin: 0 auto;
+}
+.skills-content_reading {
+ margin: 0 auto;
+}
+.btn__skills_reading {
+ margin: 0 auto;
+}
+.skills-item4_flex {
+ margin: 0 auto;
+}
+.listening {
+ margin: 0 auto;
+}
+.skills-image_listening {
+ margin: 0 auto;
+}
+.skills-content_listening {
+ margin: 0 auto;
+}
+.btn__skills_listening {
+ margin: 0 auto;
+}
+/* END skills  */
+
+
+/*3 НАЧАЛО About Us  *//* Section 3 */
+.aboutUs {
+height: 433px;
+background: #9df0f0;
+}
+.aboutUs-flex {
+ margin: 0 auto;
+}
+.aboutUs-content {
+ margin: 0 auto;
+}
+.aboutUs-numbers_flex {
+ margin: 0 auto;
+}
+.numbers {
+ margin: 0 auto;
+}
+.number_800 {
+ margin: 0 auto;
+}
+.number_18 {
+ margin: 0 auto;
+}
+.number_6 {
+ margin: 0 auto;
+}
+.aboutUs-numbers_text-flex {
+ margin: 0 auto;
+}
+.Pupils_text {
+ margin: 0 auto;
+}
+.Teachers_text {
+ margin: 0 auto;
+}
+.Foreign_text {
+ margin: 0 auto;
+}
+.aboutUs-image {
+ margin: 0 auto;
+}
+/* END About Us  */
+
+
+/*4 НАЧАЛО Pricing  *//* Section 4 */
+.pricing {
+ height: 611px;
+ background: #83eeee;
+}
+.pricing-grid {
+ margin: 0 auto;
+}
+.self-study {
+ margin: 0 auto;
+}
+.self-study_img {
+ margin: 0 auto;
+}
+.self-study_content {
+ margin: 0 auto;
+}
+.self-study_content-h4 {
+ margin: 0 auto;
+}
+.self-study_content-p {
+ margin: 0 auto;
+}
+.self-study__btn {
+ margin: 0 auto;
+}
+.btn-text1 {
+ margin: 0 auto;
+}
+.live {
+ margin: 0 auto;
+}
+.live_img {
+ margin: 0 auto;
+}
+.live_content {
+ margin: 0 auto;
+}
+.live_content-h4 {
+ margin: 0 auto;
+}
+.live_content-p {
+ margin: 0 auto;
+}
+.live__btn {
+ margin: 0 auto;
+}
+.btn-text2 {
+ margin: 0 auto;
+}
+.personal {
+ margin: 0 auto;
+}
+.personal_img {
+ margin: 0 auto;
+}
+.personal_content {
+ margin: 0 auto;
+}
+.personal_content-h4 {
+ margin: 0 auto;
+}
+.personal_content-p {
+ margin: 0 auto;
+}
+.btn-text3 {
+ margin: 0 auto;
+}
+/* END Pricing  */
+
+/*5 НАЧАЛО Contact Us  *//* Section 5 */
+.contactUs {
+height: 410px;
+background: #70f0f0;
+}
+.container-contactUs {
+ margin: 0 auto;
+}
+.contactUs-flex {
+ margin: 0 auto;
+}
+.contactUs-img {
+ margin: 0 auto;
+}
+.contactUs-content {
+ margin: 0 auto;
+}
+.contactUs-form {
+ margin: 0 auto;
+}
+.contactUs_line {
+ margin: 0 auto;
+}
+/* END Contact Us  */
+
+
+/*6 НАЧАЛО footer  *//* Section 6 */
+.footer {
+height: 80px;
+background: #57ecec;
+}
+.footer-flex {
+ margin: 0 auto;
+}
+.footer_TheTitle {
+ margin: 0 auto;
+}
+.footer-text {
+ margin: 0 auto;
+}
+/* END footer  */
