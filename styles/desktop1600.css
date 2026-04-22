@@ -31,9 +31,10 @@ background: #F5F5F5;
 }
 
 .container {
-  max-width: 1600px;
-margin: 0 auto;
+position: static;
+max-width: 1600px;
 padding: 0 120px;
+margin: 0 auto;
 }
 /* КОНЕЦ: SECTION Desktop HD */
 
@@ -98,20 +99,21 @@ height: 20px;
   width: 220px;
   height: 70px;
   margin-top: 58px;
+
   border: 2px solid #263238;
   border-radius: 5px;
-  font-size: 15px;
-  padding: 12px;
-  border-radius: 5px;
   cursor: pointer;
-  background: #ffffff;
+  
+    background: #ffffff;
+}
 
-  font-family: 'Poppins';
-font-style: normal;
+.navbtn-text {
+  height: 24px;
+
+font-family: var(--font-family);
 font-weight: 400;
 font-size: 24px;
 line-height: 36px;
-/* identical to box height */
 
 color: #000000;
 }
