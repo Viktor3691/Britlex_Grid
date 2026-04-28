@@ -208,7 +208,6 @@ height: 660px;
 
 .box-text_img-flex {
 display: flex;
-width: 660px;
 height: 350px;
 
 padding-top: 1px;
@@ -217,11 +216,14 @@ padding-left: 3px;
 .box-text_img-lamp {
 width: 132px;
 height: 132px;
-padding-top: 171px;
-padding-left: 32px;
+padding-top: 189px;
+padding-left: 39px;
 }
 
 .cover-box_text-h1 {
+
+  padding-top: 99px;
+  padding-left: 127px;
 
 font-family: var(--font-family);
 font-weight: 600;
