@@ -1,12 +1,5 @@
 
 
-/* НАЧАЛО: SECTION Desktop HD   */
-.desktop {
-width: 992px;
-height: 3260px;
-margin: 0 auto;
-background: #ffffff
-}
 
 .container {
 padding: 0 21px;
@@ -87,7 +80,7 @@ margin-left: 100px;
 border: 2px solid #263238;
 border-radius: 5px;
   cursor: pointer;
-  
+
   background: #ffffff;
 }
 .navbtn-text {

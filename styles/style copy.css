@@ -1,0 +1,1083 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  line-height: inherit;
+}
+
+
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none !important;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  color: #212121;
+}
+
+button {
+  outline: none !important;
+  cursor: pointer;
+}
+
+/* Btn style */
+
+.theme-btn {
+  display: inline-block;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+
+
+:root {
+  --font-family: "Poppins", sans-serif;
+
+}
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    /* background: #f5f2f2 */
+      background: rgb(243, 181, 181);
+}
+
+/* НАЧАЛО: SECTION Desktop HD   */
+.container {
+max-width: 1600px;
+padding: 0 120px;
+margin: 0 auto;
+ background: rgb(236, 243, 235);
+
+}
+/* КОНЕЦ: SECTION Desktop HD */
+
+/*1 НАЧАЛО header  *//* Section 1 */
+.header {
+height: 892px;
+box-sizing: border-box;
+background: #ffffff;
+}
+
+.header__content-inner {
+    display: flex;
+    justify-content: start;
+}
+
+.nav_TheTitle {
+    height: 30px;
+
+ padding-top: 64px;
+padding-left: 129px;
+
+font-weight: 400;
+font-size: 36px;
+color: #000;
+}
+
+.nav_TheTitle span {
+color: #939393;
+}
+
+
+.menu {
+  display: flex;
+  margin-top: 70px;
+  margin-left: 254px;
+}
+.menu li {
+    display: inline-block;
+}
+.menu a {
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #263238;
+    transition: all .3s;
+}
+.menu a:hover {
+    border-color: #ffc222;
+}
+
+.header__btn-menu {
+  display: none;
+}
+.icon-bars {
+
+}
+
+.header__Home {
+margin-top: 0px;
+}
+.header__Skills {
+margin-left: 31px;
+}
+.header__AboutUs {
+margin-left: 28px;
+}
+.header__Pricing {
+margin-left: 52px;
+}
+.header__Contacts {
+margin-left: 27px;
+}
+
+.navbtn {
+  width: 220px;
+  height: 70px;
+  margin-top: 58px;
+  margin-left: 242px;
+
+  border: 2px solid #263238;
+  border-radius: 5px;
+  cursor: pointer;
+
+    background: #ffffff;
+}
+
+.navbtn-text {
+padding-top: 16px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+
+color: #000000;
+}
+
+.navbtn:hover {
+  background-color: #ebf0f1;
+}
+
+
+
+.cover-box_grid {
+ display: grid;
+ height: 662px;
+   grid-template-areas:
+  "one two";
+}
+.cover-box_text {
+   grid-area: one;
+}
+.cover-box_img {
+   grid-area: two;
+}
+
+
+
+
+.cover-box_text {
+
+height: 660px;
+}
+
+.box-text_img-flex {
+display: flex;
+width: 660px;
+height: 350px;
+
+padding-top: 1px;
+padding-left: 3px;
+}
+.box-text_img-lamp {
+width: 132px;
+height: 132px;
+padding-top: 171px;
+padding-left: 32px;
+}
+
+.cover-box_text-h1 {
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 63px;
+line-height: 126%;
+letter-spacing: 0.5px;
+color: #000;
+
+}
+
+.cover-box_text-p {
+    width: 632px;
+    height: 108px;
+    padding-top: 16px;
+    padding-left: 11px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #8F95A5;
+}
+
+.cover-btn {
+width: 438px;
+height: 118px;
+
+margin-top: 61px;
+margin-left: 11px;
+
+background: #263238;
+border-radius: 15px;
+cursor: pointer;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #fff;
+}
+.cover-btn:hover {
+  background: #3f4c52;
+}
+
+.cover-box_img {
+width: 650px;
+height: 660px;
+
+padding-top: 38px;
+padding-left: 23px;
+}
+/* END header  */
+
+/*2 НАЧАЛО skills  *//* Section 2 */
+.skills {
+height: 1271px;
+box-sizing: border-box;
+background: #ffffff;
+}
+
+
+.skills h2{
+width: 124px;
+height: 80px;
+
+padding-left: 619px;
+padding-top: 49px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 80px;
+/* identical to box height, or 167% */
+
+color: #000000;
+}
+
+/* Grid */
+.skills__grid {
+  display: grid;
+  gap: 18px;
+  grid-template-areas:
+  "one two three"
+  "one four four";
+  justify-content: start;
+    align-items: stretch;
+  align-content: start;
+}
+.speaking {
+  grid-area: one;
+}
+.writing {
+  grid-area: two;
+}
+.reading {
+  grid-area: three;
+}
+.listening {
+  grid-area: four;
+  flex-direction: row;
+}
+.listening .skills__grid-image {
+  order: 1;
+}
+/* Grid */
+
+/* Элемент 1 */
+.skills-item1 {
+max-width: 435px;
+height: 894px;
+margin-top: 95px;
+margin-left: 13px;
+margin-right: 20px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.skills-image_speaking {
+ width: 390px;
+height: 390px;
+
+margin-top: 35px;
+margin-left: 17px;
+}
+
+.skills-content_speaking {
+width: 435px;
+height: 391px;
+
+
+}
+.skills-content_speaking h3 {
+width: 144px;
+height: 80px;
+margin-top: 5px;
+margin-left: 37px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 80px;
+/* identical to box height, or 267% */
+
+color: #263238;
+}
+
+.skills-content_speaking p {
+width: 347px;
+height: 192px;
+margin-top: 5px;
+margin-left: 37px;
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #8F95A5;
+}
+
+.btn__skills_speaking {
+width: 230px;
+height: 61px;
+
+margin-top: 34px;
+margin-left: 37px;
+text-align: center;
+
+background: #263238;
+border-radius: 5px;
+cursor: pointer;
+}
+.btn-text {
+ width: 103px;
+height: 27px;
+margin: auto;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+
+/*  Элемент 2 */
+.skills-item2 {
+max-width: 435px;
+height: 531px;
+margin-top: 91px;
+margin-right: 20px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.skills-image_writing {
+width: 293px;
+height: 293px;
+ position: absolute;
+padding-left: 98px;
+}
+.skills-image_writing img {
+  float: inline-start;
+}
+.skills-content_writing {
+height: 80px;
+
+}
+.skills-content_writing h3 {
+
+  padding-left: 0;
+  height: 40px;
+
+ padding-top: 255px;
+ padding-left: 18px;
+
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 80px;
+/* identical to box height, or 267% */
+
+color: #263238;
+}
+.skills-content_writing p {
+  height: 65px;
+  margin-top: 0;
+  padding-top: 32px;
+  padding-left: 17px;
+
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #8F95A5;
+}
+
+.btn__skills_writing {
+width: 218px;
+height: 60px;
+margin-top: 40px;
+margin-left: 17px;
+
+background: #263238;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/*  Элемент 3 */
+.skills-item3 {
+  max-width: 435px;
+width: 434px;
+height: 531px;
+margin-top: 91px;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.skills-image_reading {
+  position: relative;
+padding-top: 13px;
+padding-left: 6px;
+
+width: 371px;
+height: 247px;
+}
+
+.skills-content_reading {
+width: 380px;
+height: 250px;
+}
+
+.skills-content_reading h3 {
+width: 127px;
+height: 45px;
+
+padding-left: 45px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 80px;
+/* identical to box height, or 267% */
+
+color: #263238;
+}
+
+.skills-content_reading p {
+width: 375px;
+height: 72px;
+padding-top: 20px;
+padding-left: 48px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #8F95A5;
+}
+
+.btn__skills_reading {
+width: 218px;
+height: 60px;
+margin-top: 35px;
+margin-left: 48px;
+
+background: #263238;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/*  Элемент 4 */
+.skills-item4_flex {
+width: 885px;
+height: 343px;
+
+display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+background: #F5F5F5;
+border-radius: 10px;
+}
+
+.skills-image_listening {
+width: 382px;
+height: 255px;
+
+padding-top: 47px;
+padding-right: 50px;
+}
+
+.skills-content_listening {
+width: 345px;
+height: 80px;
+}
+.skills-content_listening h3 {
+width: 137px;
+height: 55px;
+padding-top: 48px;
+padding-left: 23px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 80px;
+/* identical to box height, or 267% */
+
+color: #263238;
+}
+.skills-content_listening p {
+width: 390px;
+height: 70px;
+margin-top: 20px;
+padding-left: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #8F95A5;
+}
+
+.btn__skills_listening {
+width: 218px;
+height: 60px;
+margin-top: 24px;
+margin-left: 18px;
+
+background: #263238;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* END skills  */
+
+/*3 НАЧАЛО About Us  *//* Section 3 */
+.aboutUs {
+height: 761px;
+box-sizing: border-box;
+background: #ffffff;
+}
+.aboutUs-flex {
+display: flex;
+padding-top: 91px;
+}
+.aboutUs-content {
+width: 790px;
+height: 500px;
+}
+.aboutUs-content h3 {
+width: 219px;
+height: 70px;
+padding-top: 38px;
+padding-left: 11px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 80px;
+/* identical to box height, or 167% */
+
+color: #000000;
+}
+.aboutUs-content p {
+width: 635px;
+height: 180px;
+padding-top: 33px;
+padding-left: 11px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #8f95a5;
+}
+
+.aboutUs-numbers_flex {
+ display: flex;
+justify-content: flex-start;
+ width: 635px;
+ height: 50px;
+ margin-top: 23px;
+}
+.numbers {
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height:10px;
+color: #2a3246;
+}
+.number_800 {
+  width: 150px;
+
+  padding-top: 52px;
+  padding-left: 11px;
+}
+.number_18 {
+  width: 150px;
+
+   padding-top: 52px;
+  padding-left: 124px;
+}
+.number_6 {
+    width: 150px;
+
+   padding-top: 52px;
+  padding-left: 105px;
+}
+
+.aboutUs-text p {
+  padding-top: 26px;
+  padding-left: 28px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+
+.aboutUs-content table {
+  width: 100%;
+  height: 50px;
+  margin-top: 33px;
+  margin-left: 25px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+
+.aboutUs-image {
+width: 500px;
+height: 500px;
+padding-top: 8px;
+padding-left: 51px;
+}
+
+
+/* END About Us  */
+
+
+/*4 НАЧАЛО Pricing  *//* Section 4 */
+.pricing {
+height: 913px;
+box-sizing: border-box;
+background: #ffffff;
+}
+
+
+.pricing h3 {
+  height: 20px;
+  padding-top: 28px;
+  padding-left: 598px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 167%;
+letter-spacing: 0.3px;
+color: #000;
+}
+/* Grid */
+.pricing-grid {
+  display: grid;
+  gap: 2px;
+  grid-template-areas:
+  "one two three";
+  justify-content: stretch;
+    align-items: stretch;
+  align-content: start;
+}
+
+/* 1 элемент */
+.self-study {
+  height: 850px;
+  grid-area: one;
+}
+.self-study_img {
+width: 311px;
+height: 311px;
+
+padding-top: 115px;
+padding-left: 38px;
+}
+.self-study_content {
+  height: 20px;
+
+}
+.self-study_content-h4 {
+  padding-top: 46px;
+  padding-left: 11px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 29.2px;
+letter-spacing: 0.05ch;
+color: #263238;
+}
+.self-study_content-p {
+  padding-top: 20px;
+  padding-left: 12px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #8f95a5;
+}
+
+.self-study__btn {
+width: 240px;
+height: 45px;
+margin-top: 27px;
+margin-left: 5px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.self-study__btn:hover {
+  background-color: #ebf0f1;
+}
+
+.btn-text1 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.02ch;
+color: #263238;
+}
+.btn-text1 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+letter-spacing: 0.02ch;
+color: #546269;
+}
+
+/* 2 элемент */
+.live {
+    height: 850px;
+  grid-area: two;
+}
+.live_img {
+width: 391px;
+height: 283px;
+
+padding-top: 141px;
+padding-left: 31px;
+}
+.live_content {
+  height: 20px;
+}
+.live_content-h4 {
+  padding-top: 44px;
+  padding-left: 35px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 30px;
+letter-spacing: 0.02ch;
+color: #263238;
+}
+.live_content-p {
+  padding-top: 23px;
+  padding-left: 30px;
+
+  line-height: 150%;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+.live__btn {
+width: 240px;
+height: 45px;
+
+margin-top: 58px;
+margin-left: 29px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.live__btn:hover {
+  background-color: #ebf0f1;
+}
+.btn-text2 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+color: #263238;
+}
+.btn-text2 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #546269;
+}
+
+/* 3 элемент */
+.personal {
+    height: 850px;
+  grid-area: three;
+}
+.personal_img {
+width: 340px;
+height: 340px;
+
+padding-top: 115px;
+padding-left: 65px;
+}
+.personal_content {
+  height: 20px;
+}
+.personal_content-h4 {
+  padding-top: 13px;
+  padding-left: 15px;
+
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 30px;
+letter-spacing: 0.023ch;
+line-height: 160%;
+color: #263238;
+}
+.personal_content-p {
+  padding-top:18px;
+  padding-left: 15px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #8f95a5;
+}
+.personal__btn {
+width: 240px;
+height: 45px;
+margin-top: 54px;
+margin-left: 14px;
+
+border: none;
+cursor: pointer;
+background: #eee;
+}
+.personal__btn:hover {
+  background-color: #ebf0f1;
+}
+
+.btn-text3 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 30px;
+color: #263238;
+}
+.btn-text3 span {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #546269;
+}
+
+/* END Pricing  */
+
+
+/*5 НАЧАЛО Contact Us  *//* Section 5 */
+.contactUs {
+height: 668px;
+box-sizing: border-box;
+background: #ffffff;
+margin: 0 auto;
+}
+.container-contactUs {
+  max-width: 1600px;
+  margin: 0 auto;
+padding: 0 110px;
+}
+.contactUs-flex {
+  height: 650px;
+ display: flex;
+}
+
+.contactUs-img {
+  width: 477px;
+height: 429px;
+
+padding-top: 94px;
+}
+
+.contactUs-content {
+height: 500px;
+}
+.contactUs-content h3 {
+  height: 20px;
+  padding-top: 127px;
+  padding-left: 105px;
+
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 167%;
+color: #000;
+}
+.contactUs-content p {
+  height: 50px;
+  padding-top: 97px;
+  padding-left: 105px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #8f95a5;
+}
+.contactUs-form {
+height: 100px;
+margin-top: 57px;
+margin-left: 108px;
+}
+.contactUs-form_input {
+  width: 450px;
+  height: 80px;
+ border: 1px solid #000000;
+  border-radius: 10px;
+  color: #000000;
+}
+.contactUs-form button {
+width: 264px;
+height: 80px;
+margin-top: 2px;
+margin-left: 6px;
+
+border-radius: 10px;
+background: #263238;
+cursor: pointer;
+
+
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+color: #fff;
+}
+
+.contactUs-form button:hover {
+  background: #03537e;
+}
+.contactUs_line {
+width: 1338px;
+height: 1px;
+
+padding-top: 5px;
+padding-left: 20px;
+
+background: #c4c4c4;
+}
+
+/* END Contact Us  */
+
+
+/*6 НАЧАЛО footer  *//* Section 6 */
+.footer {
+height: 137px;
+box-sizing: border-box;
+ background: #ffffff;
+}
+.container-footer {
+  max-width: 1600px;
+padding: 0 100px;
+margin: 0 auto;
+}
+.footer-flex {
+  display: flex;
+}
+.footer_TheTitle {
+    height: 30px;
+
+padding-top: 19px;
+padding-left: 31px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #000;
+}
+.footer_TheTitle span {
+color: #939393;
+}
+.footer-text {
+height: 10px;
+padding-top: 43px;
+padding-left: 606px;
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #8f95a5;
+}
+
+/* END footer  */

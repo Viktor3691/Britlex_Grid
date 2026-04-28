@@ -12,69 +12,83 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-<link rel="stylesheet" href="./styles/normalize.css">
-<!-- <link rel="stylesheet" href="./styles/fonts.css"> -->
-<link rel="stylesheet" href="./styles/query.fancybox.min.css">
-<link rel="stylesheet" href="./styles/slick.css">
-<link rel="stylesheet" href="./styles/jquery.formstyler.css">
-
 
 <link rel="stylesheet" href="./styles/normalize.css">
-<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="./styles/style copy.css">
 <link rel="stylesheet" href="./styles/media.css">
 
 </head>
 
 <body>
-<div class="page-wrapper">
-<section class="desktop"><!--НАЧАЛО desktop -->
+
+    <header class="header"> <!--1 НАЧАЛО header -->
 
 
-    <section class="header"> <!--1 НАЧАЛО header -->
-        <div class="container">
-            <div class="nav_flex">
-                <div class="nav_TheTitle">Brit<span>lex</span></div>
-                <div class="nav-bar_flex">
-                    <div class="nav-bar text_Home">Home</div>
-                    <div class="nav-bar text_Skills">Skills</div>
-                    <div class="nav-bar text_AboutUs">About Us</div>
-                    <div class="nav-bar text_Pricing ">Pricing</div>
-                    <div class="nav-bar text_Contacts ">Contacts</div>
-                </div>
-                <button class="navbtn">
-                    <div class="navbtn-text">Let’s Talk</div>
-                </button>
-            </div>
+        <div class="header__content">
 
+            <div class="container">
+                <div class="header__content-inner">
+
+                        <div class="nav_TheTitle">Brit<span>lex</span></div>
+                        <div class="menu">
+                            <div class="header__btn-menu">
+                                <span class="icon-bars"></span>
+
+                            </div>
+                            <ul>
+                                <li><a href="#" class=" header__Home">Home</a></li>
+                                <li><a href="#"  class=" header__Skills">Skills</a></li>
+                                <li><a href="#"  class=" header__AboutUs">About Us</a></li>
+                                <li><a href="#"  class=" header__Pricing">Pricing</a></li>
+                                <li><a href="#"  class=" header__Contacts">Contacts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav__btn">
+                            <button class="navbtn">
+                                <div class="navbtn-text">Let’s Talk</div>
+                            </button>
+                        </div>
+
+                </div><!-- header__content-inner" -->
+            </div><!-- container -->
+        </div><!-- header__content -->
+
+
+<div class="container">
             <div class="cover-box_grid">
 
-                <div class="cover-box_text">
 
-                    <div class="box-text_img-flex">
+                    <div class="cover-box_text">
 
-                        <div class="cover-box_text-h1">
-                            Learn <br>Any Foreign <br>Language
+                        <div class="box-text_img-flex">
+
+                            <div class="cover-box_text-h1">
+                                Learn <br>Any Foreign <br>Language
+                            </div>
+
+                            <div class="box-text_img-lamp">
+                                <img src="./images/light-bulb-svgrepo-com 1.svg" alt="">
+                            </div>
                         </div>
 
-                        <div class="box-text_img-lamp">
-                            <img src="./images/light-bulb-svgrepo-com 1.svg" alt="">
+                        <div class="cover-box_text-p">
+                            With our teachers who write a program for <br>
+                            each student, you will be able to make your <br>
+                            first sketch after the first lesson.
                         </div>
+                        <button class="cover-btn">Get started</button>
                     </div>
 
-                    <div class="cover-box_text-p">
-                        With our teachers who write a program for <br>
-                        each student, you will be able to make your <br>
-                        first sketch after the first lesson.
-                    </div>
-                    <button class="cover-btn">Get started</button>
+                    <div class="cover-box_img"><img src="./images/cover.svg" alt=""></div>
                 </div>
+            </div>
+</div>
 
-                <div class="cover-box_img"><img src="./images/cover.svg" alt=""></div>
-            </div><!--END cover-box_flex -->
 
 
-        </div><!--END container -->
-    </section><!--END header -->
+
+    </header><!--END header -->
 
 
     <section class="skills"><!--2 НАЧАЛО section  Skills -->
@@ -311,8 +325,8 @@
 
 
 
-</section><!--END desktop -->
-</div><!-- page-wrapper -->
+
+
 
 
 

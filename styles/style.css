@@ -13,25 +13,6 @@ html {
 }
 
 
-
-/***
-
-====================================================================
-    Global Settings
-====================================================================
-
-***/
-.page-wrapper {
-  width: 100%;
-  min-width: 300px;
-  z-index: 9;
-  margin: 0px auto;
-  overflow: hidden;
-
-}
-
-
-
 :root {
   --font-family: "Poppins", sans-serif;
 }
@@ -94,13 +75,6 @@ body {
 }
 
 /* НАЧАЛО: SECTION Desktop HD   */
-.desktop {
-  width: 1600px;
-height: 4642px;
-margin: 0 auto;
-background: #5653e7;
-}
-
 .container {
 max-width: 1600px;
 padding: 0 120px;
@@ -123,7 +97,6 @@ display: flex;
 
 }
 
-
 .nav_TheTitle {
     height: 30px;
     padding-top: 57px;
@@ -133,9 +106,11 @@ font-weight: 400;
 font-size: 36px;
 color: #000;
 }
+
 .nav_TheTitle span {
 color: #939393;
 }
+
 .nav-bar_flex {
 display: flex;
 width: 760px;
@@ -144,6 +119,7 @@ justify-content: start;
 padding-top: 71px;
 padding-left: 253px;
 }
+
 .nav-bar {
  font-family: var(--font-family);
 font-weight: 600;

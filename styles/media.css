@@ -1,44 +1,35 @@
 /* media */
 
 
+@media (max-width: 1156px) {
 
-/* Малые устройства (планшеты с портретной ориентацией и большие телефоны, от 320 пикселей) */
-@media only screen and (min-width: 320px) {
+
+}
+@media (max-width: 1050px) {
+
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 700px) {
+
+}
+@media (max-width: 600px) {
+
+}
+@media (max-width: 540px) {
+
+}
+@media (max-width: 414px) {
+
+}
+@media (max-width: 400px) {
+
+}
+@media (max-width: 375px) {
 
 }
 
-/* Очень маленькие устройства (телефоны, 320 пикселей и меньше) */
-@media only screen and (max-width: 320px) {
+@media (min-width: 700px) {
 
 }
-
-/* Средние устройства (планшеты в альбомной ориентации, 575 пикселей и более) */
-@media only screen and (max-width: 575px) {
-
-}
-
-/* Средние устройства (планшеты в альбомной ориентации, 767 пикселей и более) */
-@media only screen and (max-width: 767px) {
-
-}
-
-/* Крупные устройства (ноутбуки/настольные компьютеры, от 992 пикселей) */
-@media only screen and (max-width: 992px) {
-
-}
-
-/* Очень большие устройства (большие ноутбуки и настольные компьютеры, от 1200 пикселей и выше) */
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* Очень большие устройства (большие ноутбуки и настольные компьютеры, от 1600 пикселей и выше) */
-@media only screen and (max-width: 1600px) {
-.container {
-max-width: 1600px;
-padding: 0 120px;
-margin: 0 auto;
- background: rgb(236, 243, 235);
-}
-}
-
