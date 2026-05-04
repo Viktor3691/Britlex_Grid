@@ -499,8 +499,8 @@ border-radius: 10px;
 
 .skills-image_reading {
   position: relative;
-padding-top: 13px;
-padding-left: 6px;
+padding-top: 7px;
+padding-left: 1px;
 
 width: 371px;
 height: 247px;
@@ -571,7 +571,7 @@ width: 382px;
 height: 255px;
 
 padding-top: 47px;
-padding-right: 50px;
+padding-right: 25px;
 }
 
 .skills-content_listening {
@@ -581,8 +581,8 @@ height: 80px;
 .skills-content_listening h3 {
 width: 137px;
 height: 55px;
-padding-top: 48px;
-padding-left: 23px;
+padding-top: 44px;
+padding-left: 48px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -597,7 +597,7 @@ color: #263238;
 width: 390px;
 height: 70px;
 margin-top: 20px;
-padding-left: 21px;
+padding-left: 48px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -611,8 +611,8 @@ color: #8F95A5;
 .btn__skills_listening {
 width: 218px;
 height: 60px;
-margin-top: 24px;
-margin-left: 18px;
+margin-top: 29px;
+margin-left: 45px;
 
 background: #263238;
 border-radius: 5px;
@@ -634,6 +634,7 @@ padding-top: 91px;
 .aboutUs-content {
 width: 790px;
 height: 500px;
+margin-left: 118px;
 }
 .aboutUs-content h3 {
 width: 219px;
@@ -739,7 +740,7 @@ background: #ffffff;
 .pricing h3 {
   height: 20px;
   padding-top: 28px;
-  padding-left: 598px;
+text-align: center;
 
 font-family: var(--font-family);
 font-weight: 600;
@@ -751,6 +752,8 @@ color: #000;
 /* Grid */
 .pricing-grid {
   display: grid;
+  max-width: 1340px;
+  margin-left: 118px;
   gap: 2px;
   grid-template-areas:
   "one two three";
@@ -786,7 +789,7 @@ letter-spacing: 0.05ch;
 color: #263238;
 }
 .self-study_content-p {
-  padding-top: 20px;
+  padding-top: 27px;
   padding-left: 12px;
 
 font-family: var(--font-family);
@@ -799,8 +802,8 @@ color: #8f95a5;
 .self-study__btn {
 width: 240px;
 height: 45px;
-margin-top: 27px;
-margin-left: 5px;
+margin-top: 29px;
+margin-left: 13px;
 
 border: none;
 cursor: pointer;
@@ -835,14 +838,14 @@ width: 391px;
 height: 283px;
 
 padding-top: 141px;
-padding-left: 31px;
+padding-left: 45px;
 }
 .live_content {
   height: 20px;
 }
 .live_content-h4 {
-  padding-top: 44px;
-  padding-left: 35px;
+  padding-top: 50px;
+  padding-left: 50px;
 
 font-family: var(--font-family);
 font-weight: 600;
@@ -851,8 +854,8 @@ letter-spacing: 0.02ch;
 color: #263238;
 }
 .live_content-p {
-  padding-top: 23px;
-  padding-left: 30px;
+  padding-top: 27px;
+  padding-left: 48px;
 
   line-height: 150%;
 font-family: var(--font-family);
@@ -864,8 +867,8 @@ color: #8f95a5;
 width: 240px;
 height: 45px;
 
-margin-top: 58px;
-margin-left: 29px;
+margin-top: 61px;
+margin-left: 50px;
 
 border: none;
 cursor: pointer;
@@ -897,14 +900,14 @@ width: 340px;
 height: 340px;
 
 padding-top: 115px;
-padding-left: 65px;
+padding-left: 77px;
 }
 .personal_content {
   height: 20px;
 }
 .personal_content-h4 {
-  padding-top: 13px;
-  padding-left: 15px;
+  padding-top: 12px;
+  padding-left: 26px;
 
   font-family: var(--font-family);
 font-weight: 600;
@@ -914,7 +917,7 @@ line-height: 160%;
 color: #263238;
 }
 .personal_content-p {
-  padding-top:18px;
+  padding-top:24px;
   padding-left: 15px;
 
 font-family: var(--font-family);
@@ -925,8 +928,9 @@ color: #8f95a5;
 .personal__btn {
 width: 240px;
 height: 45px;
-margin-top: 54px;
-margin-left: 14px;
+
+margin-top: 69px;
+margin-left: 26px;
 
 border: none;
 cursor: pointer;
@@ -974,6 +978,7 @@ padding: 0 110px;
 height: 429px;
 
 padding-top: 94px;
+padding-left: 112px;
 }
 
 .contactUs-content {
@@ -1052,19 +1057,15 @@ height: 137px;
 box-sizing: border-box;
  background: #ffffff;
 }
-.container-footer {
-  max-width: 1600px;
-padding: 0 100px;
-margin: 0 auto;
-}
+
 .footer-flex {
   display: flex;
 }
 .footer_TheTitle {
     height: 30px;
 
-padding-top: 19px;
-padding-left: 31px;
+padding-top: 27px;
+padding-left: 132px;
 
 font-family: var(--font-family);
 font-weight: 400;
@@ -1076,7 +1077,7 @@ color: #939393;
 }
 .footer-text {
 height: 10px;
-padding-top: 43px;
+padding-top: 46px;
 padding-left: 606px;
 
 font-family: var(--font-family);
