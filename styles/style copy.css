@@ -1,0 +1,606 @@
+
+        /* ===== RESET & BASE ===== */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+        --font-family: "Poppins", sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 126px;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            display: block;
+            height: 800px;
+        }
+
+        .header__content-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 48px 5px 0px 2px;
+
+        }
+
+        .nav_TheTitle {
+            font-size: 36px;
+            font-weight: 400;
+            color: #000;
+        }
+
+        .nav_TheTitle span {
+            color: #939393;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            padding-left: 52px;
+            gap: 41px;
+            width: 620px;
+
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #263238;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu ul li a:hover {
+            color: #f15525;
+        }
+
+        .header__btn-menu {
+            display: none;
+        }
+
+        .nav__btn{
+            margin-top: 9px;
+        }
+
+        .navbtn {
+        width: 220px;
+        height: 70px;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+
+        border: 2px solid #263238;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #ffffff;
+        }
+
+        .navbtn:hover {
+            background: #ec380b;
+            color: #fff;
+        }
+
+        /* Hero */
+
+.cover-box_grid {
+  display: grid;
+  height: 662px;
+  grid-template-areas: "one two";
+}
+.cover-box_text {
+  grid-area: one;
+}
+.cover-box_img {
+  grid-area: two;
+}
+
+.cover-box_text {
+  height: 660px;
+}
+
+.box-text_img-flex {
+  display: flex;
+  height: 350px;
+
+  padding-top: 1px;
+  padding-left: 3px;
+}
+.box-text_img-lamp {
+  width: 153px;
+  height: auto;
+  padding-top: 197px;
+  padding-left: 44px;
+}
+
+.cover-box_text-h1 {
+  padding-top: 98px;
+
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 63px;
+  line-height: 128%;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.cover-box_text-p {
+  width: 550px;
+  height: 108px;
+
+  padding-top: 28px;
+  padding-left: 8px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #8f95a5;
+}
+
+.cover-btn {
+  width: 438px;
+  height: 118px;
+
+  margin-top: 90px;
+  margin-left: 4px;
+
+  background: #263238;
+  border-radius: 15px;
+  cursor: pointer;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+.cover-btn:hover {
+  background: #3f4c52;
+}
+
+.cover-box_img {
+  width: 800px;
+  height: auto;
+
+  padding-top: 50px;
+  padding-left: 141px;
+}
+
+        /* ===== SKILLS ===== */
+        .skills {
+            padding: 60px 0;
+        }
+
+        .skills h2 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #f5f5f5;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card .icon {
+            font-size: 40px;
+            color: #f15525;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .skill-card p {
+            color: #8f95a5;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        .skill-card.speaking {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        /* ===== ABOUT US ===== */
+        .aboutUs {
+            padding: 60px 0;
+        }
+
+        .aboutUs-flex {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .aboutUs-content {
+            flex: 1;
+        }
+
+        .aboutUs-content h3 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .aboutUs-content p {
+            color: #8f95a5;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .aboutUs-stats {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: #8f95a5;
+            font-size: 18px;
+        }
+
+        .aboutUs-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .aboutUs-image i {
+            font-size: 200px;
+            color: #263238;
+            opacity: 0.1;
+        }
+
+        /* ===== PRICING ===== */
+        .pricing {
+            padding: 60px 0;
+        }
+
+        .pricing h3 {
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background: #f5f5f5;
+            border-radius: 20px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .pricing-card .icon {
+            font-size: 50px;
+            color: #f15525;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card h4 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .pricing-card p {
+            color: #8f95a5;
+            font-size: 16px;
+            margin-bottom: 30px;
+            flex: 1;
+        }
+
+        .pricing-card .price {
+            background: #263238;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: default;
+        }
+
+        .pricing-card .price span {
+            font-weight: 400;
+            font-size: 16px;
+            color: #b0b8c0;
+        }
+
+        /* ===== CONTACT US ===== */
+        .contactUs {
+            padding: 60px 0 30px;
+        }
+
+        .contactUs-flex {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .contactUs-content {
+            flex: 1;
+        }
+
+        .contactUs-content h3 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .contactUs-content p {
+            color: #8f95a5;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .contactUs-form form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .contactUs-form input {
+            flex: 2;
+            min-width: 200px;
+            padding: 15px 20px;
+            border: 1px solid #8f95a5;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .contactUs-form button {
+            flex: 1;
+            min-width: 120px;
+            background: #263238;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 15px 30px;
+            transition: background 0.3s;
+        }
+
+        .contactUs-form button:hover {
+            background: #1a1f24;
+        }
+
+        .contactUs-line {
+            height: 1px;
+            background: #c4c4c4;
+            margin-top: 50px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 30px 0 50px;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer_TheTitle {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .footer_TheTitle span {
+            color: #939393;
+        }
+
+        .footer-social a {
+            color: #263238;
+            font-size: 20px;
+            margin-left: 20px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            color: #f15525;
+        }
+
+        /* ===== MEDIA QUERIES ===== */
+        @media (max-width: 1023px) {
+            .hero-grid {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 48px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .skill-card.speaking {
+                grid-column: 1 / 2;
+                grid-row: 1 / 3;
+            }
+
+            .aboutUs-flex {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .aboutUs-stats {
+                justify-content: center;
+            }
+
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contactUs-flex {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .contactUs-form form {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header__content-inner {
+                flex-wrap: wrap;
+            }
+
+            .header__btn-menu {
+                display: block;
+            }
+
+            .header__btn-menu button {
+                background: none;
+                border: none;
+                font-size: 28px;
+                cursor: pointer;
+                color: #263238;
+            }
+
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                padding: 20px 0;
+                background: #f5f5f5;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+
+            .menu ul.active {
+                display: flex;
+            }
+
+            .menu ul li {
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .hero-btn {
+                padding: 14px 40px;
+                font-size: 20px;
+            }
+
+            .skills h2 {
+                font-size: 36px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-card.speaking {
+                grid-column: auto;
+                grid-row: auto;
+            }
+
+            .aboutUs-content h3 {
+                font-size: 36px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .pricing h3 {
+                font-size: 36px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contactUs-content h3 {
+                font-size: 36px;
+            }
+
+            .footer-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-social a {
+                margin: 0 10px;
+            }
+        }
+
+        /* Toggle menu */
+        .menu ul.active {
+            display: flex;
+        }
