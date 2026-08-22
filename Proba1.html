@@ -15,75 +15,99 @@
 <body>
 
 <!-- HEADER -->
-
-<heder class="heder" id="home">
+<header class="header" id="home">
     <div class="container-alignment">
         <div class="container">
+
             <div class="header__flex-box">
                 <div class="header__logo-box">
                     <img class="logo-file" src="./images/logo_Britlex.svg" alt="logo">
-                </div><!-- .header__logo-box -->
+                </div>
 
                 <div class="nav-bar-box">
                     <ul class="nav-bar">
-                                <li class="nav-bar-item">
-                                <a class="nav-bar-link button__style" href="#home"><ya-tr-span
-                                data-index="0-0"
-                                data-translated="false"
-                                data-source-lang="en"
-                                data-target-lang="ru"
-                                data-value="Home"
-                                data-translation="Главная"
-                                data-ch="0"
-                                data-type="trSpan"
-                                style="visibility: inherit !important;">
-                                Home</ya-tr-span></a></li>
+                        <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#home">Home</a></li>
 
-                                <li class="nav-bar-item">
-                                <a class="nav-bar-link  button__style"           href="#skills"><ya-tr-span
-                                data-index="0-1"
-                                data-translated="false"
-                                data-source-lang="en"
-                                data-target-lang="ru"
-                                data-value="Skills"
-                                data-translation="Навыки"
-                                data-ch="0" data-type="trSpan"
-                                style="visibility: inherit !important;">
-                                Skills</ya-tr-span></a></li>
+                        <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#skills">Skills</a></li>
 
-                        <li class="nav-bar-item">
-                            <a class="nav-bar-link button__style"
-                                href="#about us"><ya-tr-span
-                                data-index="0-2"
-                                data-translated="false"
-                                data-source-lang="en"
-                                data-target-lang="ru"
-                                data-value="About Us"
-                                data-translation="О нас"
-                                data-ch="0"
-                                data-type="trSpan"
-                                style="visibility: inherit !important;">
-                                About Us</ya-tr-span></a></li>
-
-
-                        <li class="nav-bar-item">
-
-                        </li>
-
-
-                        <li class="nav-bar-item">
-
-                        </li>
+                        <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#about_us">About Us</a></li>
+                        <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#pricing">Pricing</a></li>
+                        <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#contacts">Contacts</a></li>
                     </ul>
-
-                </div><!-- nav-bar-box -->
-            </div><!-- .header__flex-box -->
-        </div><!-- container -->
-    </div><!-- container-alignment -->
-</heder>
-
-
+                </div>
+                <div class="button-box">
+                    <button class="button__style button-file">Let's Talk</button>
+                </div>
+                <a class="button__style burger sidenav-trigger" data-target="slide-out"><img class="burger-icon-file"
+                        src="./images/burger-button.svg" alt="burger-button"></a>
 
 
+
+                <nav id="slide-out" class="sidenav">
+                    <div class="sidenav-flex">
+                        <a href="#user"><img class="sidenav-logo-file" src="./images/logo_Britlex.svg"></a>
+
+                        <a class="sidenav-close" href="#!"><img class="sidenav-close-button"
+                                src="./images/close-sidenav.svg"></a>
+
+                    </div>
+
+                    <ul class="sidenav-navigation-list">
+
+                        <li class="sidenav-navbar-link">
+                            <div class="divider"></div>
+                        </li>
+
+                        <li class="sidenav-navbar-link"><a class="nav-bar-link button__style" href="#home">Home</a></li>
+
+                        <li class="sidenav-navbar-link"><a class="nav-bar-link button__style" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="sidenav-navbar-link"><a class="nav-bar-link button__style" href="#about_us">About
+                                Us</a></li>
+
+                        <li class="sidenav-navbar-link"><a class="nav-bar-link button__style"
+                                href="#pricing">Pricing</a></li>
+
+                        <li class="sidenav-navbar-link"><a class="nav-bar-link button__style"
+                                href="#contacts">Contacts</a></li>
+
+                    </ul>
+                    <button class="button__style sidenav-button-file">Let's Talk</button>
+                </nav>
+
+            </div>
+            
+
+            <div class="header__main_flex-box">
+                <div class="header__main_left-box">
+                    <div class="header__main_headline-flex-box">
+                        <h1 class="header__main_headline_text-h1">Learn <br>Any Foreign
+                                Language</h1>
+                        <img class="header__main_icon-file" src="./images/header__icon_lamp.png" alt="header__icon">
+                    </div>
+                    <p class="header__main_text-p header__main_text-p_alignment">With our teachers who
+                            write a program for each student, you will be able to make your first sketch after the first
+                            lesson.</p>
+                    <button class="button__style header__main_button-file">Get started</button>
+                </div>
+
+                <div class="header__main_right-box">
+                    <div class="header__main_right_image-box">
+                        <img class="header__main_image-file" src="./images/header__image.png" alt="header__image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER -->
+
+
+
+
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
