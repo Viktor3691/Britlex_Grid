@@ -17,8 +17,9 @@ body {
 
 /* Общий контейнер */
 .container {
-  max-width: 1340px;
+  max-width: 1340px; /* Было 1200px, стало 1600px */
   margin: 0 auto;
+  /* Немного увеличим отступы для широких экранов */
 }
 
 /* Заголовки секций */
@@ -42,6 +43,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 48px;
+}
+
+.nav-bar-box {
+  padding-left: 9px;
 }
 
 .nav-bar {
@@ -74,7 +80,7 @@ button {
 }
 
 .button-box {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .button__style:hover {
@@ -113,8 +119,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  padding: 60px 0;
 }
 
 .hero-text {
@@ -123,10 +127,10 @@ button {
 }
 
 .hero-text h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 64px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  position: relative;
+  font-weight: 700;
+  white-space: pre-line;
 }
 
 /* Иконка лампочки рядом с заголовком */
