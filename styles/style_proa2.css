@@ -1,0 +1,429 @@
+/* --- Импорт шрифта Poppins (добавьте <link> в HTML или оставьте как есть) --- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* --- Базовые стили и сброс --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #263238;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Общий контейнер */
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+/* Заголовки секций */
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Кнопки */
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* --- Шапка сайта --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+}
+
+.nav-bar-item {
+  margin-right: 36px;
+}
+.nav-bar-item:nth-child(2) {
+  margin-right: 31px;
+}
+.nav-bar-item:nth-child(3) {
+  margin-right: 57px;
+}
+.nav-bar-item:nth-child(4) {
+  margin-right: 31px;
+}
+.nav-bar-item:last-child {
+  margin-right: 0;
+}
+
+.button-box {
+  padding-top: 8px;
+}
+
+.button__style:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.button-file {
+  width: 220px;
+  height: 70px;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Иконки мобильного меню (скрыты на десктопе) */
+.menu-icon,
+.close-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none; /* Скрыто до нажатия на бургер */
+}
+
+/* --- Главный экран (Hero) --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+}
+
+.hero-text {
+  position: relative; /* ВАЖНО: без этого лампочка позиционируется относительно всей страницы и улетает вправо */
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Иконка лампочки рядом с заголовком */
+/* Позиционируем лампочку строго рядом с заголовком */
+.lightbulb-icon {
+  position: absolute;
+  top: -15px; /* Сдвигаем вверх на уровень верхней части текста */
+  right: -70px; /* Сдвигаем вправо за пределы текста */
+  width: 60px;
+}
+
+.hero-text p {
+  color: #8f95a5;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Секция Навыки (Skills) --- */
+.skills {
+  padding: 80px 0;
+}
+
+/* Сетка 2x2, где первая карточка (Speaking) занимает 2 ряда */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 колонки для широкого экрана */
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Первая карточка (Speaking) занимает 2 колонки и 2 ряда слева */
+.skill-card:first-child {
+  grid-column: span 1; /* В оригинале она забирает много места, но тут важна высота */
+  grid-row: span 2;
+  /* Делаем карточку Speaking выше остальных */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Остальные карточки занимают по 1 месту */
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.skill-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.skill-card p {
+  color: #8f95a5;
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+/* --- Секция О нас (About Us) --- */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text p {
+  color: #8f95a5;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+}
+
+.stat-item h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  color: #8f95a5;
+  font-size: 14px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Секция Цены (Pricing) --- */
+.pricing {
+  padding: 80px 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pricing-card {
+  text-align: center;
+}
+
+.pricing-card img {
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pricing-card p {
+  color: #8f95a5;
+  margin-bottom: 30px;
+}
+
+.price-tag {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.price-tag span {
+  color: #8f95a5;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* --- Секция Контакты (Contacts) --- */
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 0;
+}
+
+.contact-image {
+  max-width: 50%;
+}
+
+.contact-image img {
+  max-width: 100%;
+}
+
+.contact-text {
+  max-width: 50%;
+}
+
+.contact-text p {
+  color: #8f95a5;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+/* --- Подвал (Footer) --- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #8f95a5;
+}
+
+/* --- Адаптивность (Мобильная версия) --- */
+@media (max-width: 992px) {
+  .hero,
+  .about,
+  .contacts {
+    flex-direction: column-reverse; /* Для hero и about картинка будет внизу */
+    text-align: center;
+  }
+  .hero-text,
+  .about-text,
+  .contact-text,
+  .hero-image,
+  .about-image,
+  .contact-image {
+    max-width: 100%;
+  }
+  .skills-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr; /* Все блоки в один столбец */
+  }
+  .skill-card:first-child {
+    grid-row: auto; /* Сброс высоты первой карточки */
+  }
+  .lightbulb-icon {
+    position: static;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .stats {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu,
+  .header-btn {
+    display: none; /* Прячем меню и кнопку на мобильном */
+  }
+  .menu-icon {
+    display: block; /* Показываем бургер */
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

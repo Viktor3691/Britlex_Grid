@@ -5,166 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Britlex — Learn Any Foreign Language</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style_proba.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="header" id="home">
+    <header class="header">
         <div class="container header__flex">
-            <a href="#home" class="header__logo">
-                <!-- Замените src на путь к вашему логотипу -->
-                <img src="./IMG/logo_Britlex.svg" alt="Britlex logo" width="120" height="40">
-            </a>
+
+            <div class="header__logo-box">
+                <img class="logo-file" src="./images/logo_Britlex.svg" alt="logo">
+            </div>
 
             <nav class="header__nav" aria-label="Main navigation">
                 <ul class="header__nav-list">
                     <li><a href="#home" class="header__nav-link">Home</a></li>
                     <li><a href="#skills" class="header__nav-link">Skills</a></li>
-                    <li><a href="#about_us" class="header__nav-link">About Us</a></li>
+                    <li><a href="#about" class="header__nav-link">About Us</a></li>
                     <li><a href="#pricing" class="header__nav-link">Pricing</a></li>
                     <li><a href="#contacts" class="header__nav-link">Contacts</a></li>
                 </ul>
             </nav>
 
-            <button type="button" class="btn btn--primary">Let's Talk</button>
-
-            <button type="button" class="header__burger" aria-label="Toggle menu" aria-expanded="false">
-                <span class="visually-hidden">Menu</span>
-                <!-- Сюда можно вставить SVG иконку бургера -->
-            </button>
-        </div>
-
-        <div class="container hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Learn Any Foreign Language</h1>
-                <p class="hero__description">With our teachers who write a program for each student, you will be able to
-                    make your first sketch after the first lesson.</p>
-                <button type="button" class="btn btn--dark">Get started</button>
-            </div>
-            <div class="hero__illustration" aria-hidden="true">
-                <!-- Замените src на путь к вашей иллюстрации -->
-                <img src="./images/header__image.png" alt="Illustration of a student learning a language" width="500"
-                    height="400">
-            </div>
+            <button type="button" class="btn btn--outline">Let's Talk</button>
         </div>
     </header>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero__flex">
+            <div class="hero__content">
+                <h1 class="hero__title">Learn Any Foreign Language</h1>
+                <p class="hero__text">
+                    With our teachers who write a program for each student, you will be able to make your first sketch
+                    after the first lesson.
+                </p>
+                <button type="button" class="btn btn--primary">Get started</button>
+            </div>
+            <div class="hero__illustration">
+                <img src="./images/hero-illustration.png" alt="Student with headphones learning language" width="500"
+                    height="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section section--skills">
         <div class="container">
             <h2 class="section__title">Skills</h2>
             <div class="skills__grid">
-                <!-- Speaking -->
+                <!-- Speaking Card -->
                 <article class="card card--skills">
                     <div class="card__image">
-                        <img src="./images/skills-speaking.png" alt="Illustration for Speaking skills" width="300"
-                            height="200">
+                        <img src="./images/skill-speaking.png" alt="Speaking illustration" width="300" height="200">
                     </div>
-                    <h3 class="card__title">Speaking</h3>
-                    <p class="card__text">Improve your English skills and confidence. Live classes and interactive
-                        lessons online. 20% extra free for a limited time only.</p>
-                    <p class="card__text">Learn English online and improve your skills through our high-quality courses
-                        and resources — all designed for adult language learners.</p>
-                    <button type="button" class="btn btn--outline">Learn more</button>
+                    <div class="card__content">
+                        <h3 class="card__title">Speaking</h3>
+                        <p class="card__text">
+                            Improve your English skills and confidence. Live classes and interactive lessons online.
+                            <strong>20% extra free for a limited time only.</strong>
+                        </p>
+                        <button type="button" class="btn btn--primary">Learn more</button>
+                    </div>
                 </article>
 
-                <!-- Writing -->
+                <!-- Writing Card -->
                 <article class="card card--skills">
                     <div class="card__image">
-                        <img src="./images/skills-writing.png" alt="Illustration for Writing skills" width="300"
-                            height="200">
+                        <img src="./images/skill-writing.png" alt="Writing illustration" width="300" height="200">
                     </div>
-                    <h3 class="card__title">Writing</h3>
-                    <p class="card__text">Develop your writing fluency and accuracy with structured exercises and
-                        teacher feedback.</p>
-                    <button type="button" class="btn btn--outline">Learn more</button>
+                    <div class="card__content">
+                        <h3 class="card__title">Writing</h3>
+                        <p class="card__text">
+                            Learn English online and improve your skills through our high-quality courses and resources.
+                            All designed for adult language learners.
+                        </p>
+                        <button type="button" class="btn btn--primary">Learn more</button>
+                    </div>
                 </article>
 
-                <!-- Reading -->
+                <!-- Reading Card -->
                 <article class="card card--skills">
                     <div class="card__image">
-                        <img src="./images/skills-reading.png" alt="Illustration for Reading skills" width="300"
-                            height="200">
+                        <img src="./images/skill-reading.png" alt="Reading illustration" width="300" height="200">
                     </div>
-                    <h3 class="card__title">Reading</h3>
-                    <p class="card__text">Build vocabulary and comprehension through curated texts and interactive
-                        activities tailored to your level.</p>
-                    <button type="button" class="btn btn--outline">Learn more</button>
+                    <div class="card__content">
+                        <h3 class="card__title">Reading</h3>
+                        <p class="card__text">
+                            Enhance your comprehension and expand your vocabulary with curated texts and interactive
+                            activities.
+                        </p>
+                        <button type="button" class="btn btn--primary">Learn more</button>
+                    </div>
                 </article>
 
-                <!-- Listening -->
-                <article class="card card--skills card--reverse">
+                <!-- Listening Card -->
+                <article class="card card--skills">
                     <div class="card__image">
-                        <img src="./images/skills-listening.png" alt="Illustration for Listening skills" width="300"
-                            height="200">
+                        <img src="./images/skill-listening.png" alt="Listening illustration" width="300" height="200">
                     </div>
                     <div class="card__content">
                         <h3 class="card__title">Listening</h3>
-                        <p class="card__text">Sharpen your ear with authentic audio materials and guided listening
-                            tasks. Practice understanding different accents and speeds.</p>
-                        <button type="button" class="btn btn--outline">Learn more</button>
+                        <p class="card__text">
+                            Practice listening to authentic audio materials to sharpen your ear and improve
+                            understanding.
+                        </p>
+                        <button type="button" class="btn btn--primary">Learn more</button>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT US -->
-    <section id="about_us" class="section section--light">
-        <div class="container">
-            <h2 class="section__title">About Us</h2>
-            <div class="about__flex">
-                <div class="about__text">
-                    <p class="text">The model offers a framework for discussing problems related to the user's
-                        experience, as well as possible ways and means of solving them. Application development begins
-                        at the top level (strategy), where the future software product is described quite abstractly
-                        from the point of view of the expectations of both users and the customer.</p>
-                    <div class="about__stats">
-                        <div class="stat">
-                            <h2 class="stat__value">800</h2>
-                            <p class="stat__label">Pupils</p>
-                        </div>
-                        <div class="stat">
-                            <h2 class="stat__value">18</h2>
-                            <p class="stat__label">Teachers</p>
-                        </div>
-                        <div class="stat">
-                            <h2 class="stat__value">6</h2>
-                            <p class="stat__label">Foreign languages</p>
-                        </div>
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="section section--light">
+        <div class="container about__flex">
+            <div class="about__text">
+                <h2 class="section__title">About Us</h2>
+                <p class="text">
+                    We offer a framework for discussing problems related to the user's experience, as well as possible
+                    ways and means of solving them.
+                    Application development begins at the strategy level, where the future software product is described
+                    abstractly from the point of view of the expectations of both users and the customer.
+                </p>
+                <div class="stats__grid">
+                    <div class="stat">
+                        <h2 class="stat__value">800</h2>
+                        <p class="stat__label">Pupils</p>
+                    </div>
+                    <div class="stat">
+                        <h2 class="stat__value">18</h2>
+                        <p class="stat__label">Teachers</p>
+                    </div>
+                    <div class="stat">
+                        <h2 class="stat__value">6</h2>
+                        <p class="stat__label">Foreign languages</p>
                     </div>
                 </div>
-                <div class="about__illustration" aria-hidden="true">
-                    <img src="./images/AboutUs_section's_image.png" alt="Illustration of team working together"
-                        width="400" height="300">
-                </div>
+            </div>
+            <div class="about__illustration">
+                <img src="./images/about-illustration.png" alt="Team climbing mountain" width="400" height="300">
             </div>
         </div>
     </section>
 
-    <!-- PRICING -->
+    <!-- PRICING SECTION -->
     <section id="pricing" class="section">
         <div class="container">
             <h2 class="section__title">Pricing</h2>
             <div class="pricing__grid">
-                <!-- Self-study -->
+                <!-- Card 1: Self-study -->
                 <article class="card card--pricing">
                     <div class="card__image">
-                        <img src="./images/pricing-self-study.png" alt="Self-study online course illustration"
-                            width="300" height="200">
+                        <img src="./images/pricing-self-study.png" alt="Self-study illustration" width="300"
+                            height="200">
                     </div>
                     <h3 class="card__title">Self-study online course</h3>
-                    <p class="card__text">Start learning English online in live classes with qualified EC teachers and
-                        students from all over the world.</p>
+                    <p class="card__text">
+                        Start learning English online in live classes with qualified EC teachers and students from all
+                        over the world.
+                    </p>
                     <div class="card__price">
                         <span class="price-value">£5.99</span>
                         <span class="price-period">per month</span>
@@ -172,14 +176,15 @@
                     <button type="button" class="btn btn--primary">Subscribe</button>
                 </article>
 
-                <!-- Live classes -->
+                <!-- Card 2: Live classes -->
                 <article class="card card--pricing">
                     <div class="card__image">
-                        <img src="./images/pricing-live.png" alt="Live online classes illustration" width="300"
-                            height="200">
+                        <img src="./images/pricing-live.png" alt="Live classes illustration" width="300" height="200">
                     </div>
                     <h3 class="card__title">Live online classes</h3>
-                    <p class="card__text">Interactive group classes with expert teachers. Free 7-day trial.</p>
+                    <p class="card__text">
+                        Interactive group classes with expert teachers. <strong>Free 7-day trial.</strong>
+                    </p>
                     <div class="card__price">
                         <span class="price-value">£12.99</span>
                         <span class="price-period">per month</span>
@@ -187,14 +192,16 @@
                     <button type="button" class="btn btn--primary">Subscribe</button>
                 </article>
 
-                <!-- Personal tuition -->
+                <!-- Card 3: Personal Tuition -->
                 <article class="card card--pricing">
                     <div class="card__image">
                         <img src="./images/pricing-personal.png" alt="Personal tuition illustration" width="300"
                             height="200">
                     </div>
                     <h3 class="card__title">Personal Tuition</h3>
-                    <p class="card__text">Online one-to-one English tutoring — enjoy our first session for only \$1.</p>
+                    <p class="card__text">
+                        Online one-to-one English tutoring — enjoy our first session for only \$1.
+                    </p>
                     <div class="card__price">
                         <span class="price-value">£20.99</span>
                         <span class="price-period">per month</span>
@@ -205,51 +212,44 @@
         </div>
     </section>
 
-    <!-- CONTACTS -->
+    <!-- CONTACTS SECTION -->
     <section id="contacts" class="section section--light">
-        <div class="container">
-            <h2 class="section__title">Contact Us</h2>
-            <div class="contact__flex">
-                <div class="contact__illustration" aria-hidden="true">
-                    <img src="./images/ContactUs_section's_image.png" alt="Illustration for contact section" width="400"
-                        height="300">
-                </div>
-                <div class="contact__form-box">
-                    <p class="text">Discover your current English level by taking our free online English test. Sign up
-                        to our newsletter for learning tips and free resources.</p>
-                    <form class="form" action="/subscribe" method="POST">
-                        <label for="email" class="visually-hidden">Email address</label>
-                        <input type="email" id="email" name="email" class="input" placeholder="Enter Your E-mail"
-                            required>
-                        <button type="submit" class="btn btn--primary">Subscribe</button>
-                    </form>
-                </div>
+        <div class="container contact__flex">
+            <div class="contact__illustration">
+                <img src="./images/contact-illustration.png" alt="Person running with paper plane" width="300"
+                    height="300">
+            </div>
+            <div class="contact__form-box">
+                <h2 class="section__title">Contact Us</h2>
+                <p class="text">
+                    Discover your current English level by taking our free online English test.
+                    Sign up to our newsletter for learning tips and free resources.
+                </p>
+                <form class="form" action="/subscribe" method="POST">
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" id="email" name="email" class="input" placeholder="Enter Your E-mail" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__line"></div>
-            <div class="footer__flex">
-                <a href="#home" class="footer__logo">
-                    <img src="./images/logo_Britlex.svg" alt="Britlex logo" width="120" height="40">
-                </a>
-                <nav class="footer__nav" aria-label="Footer navigation">
-                    <ul class="footer__nav-list">
-                        <li><a href="#" class="footer__nav-link">Terms and Conditions</a></li>
-                        <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer__nav-link">Cookie Policy</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container footer__flex">
+            <a href="#home" class="footer__logo">Britlex</a>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Terms and Conditions</a></li>
+                    <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer__nav-link">Cookie Policy</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/materialize.min.js"></script>
 </body>
 
 </html>

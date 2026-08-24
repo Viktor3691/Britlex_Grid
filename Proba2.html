@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Britlex - Learn Any Foreign Language</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style_proa2.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header class="header container">
+        <div class="logo">
+            <!-- Логотип Britlex -->
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo">
+        </div>
+
+        <div class="nav-bar-box">
+            <ul class="nav-bar">
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #home">Home</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #skills">Skills</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #about">About Us</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #pricing">Pricing</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="button-box">
+            <button class="button__style button-file">Let's Talk</button>
+        </div>
+
+        <!-- Иконка бургер-меню (для мобильной версии) -->
+        <img src="./images/burger-button.svg" alt="Open Menu" class="menu-icon">
+    </header>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ (скрыто по умолчанию) -->
+    <div class="mobile-menu">
+        <!-- Иконка крестика для закрытия меню -->
+        <img src="./images/close-sidenav.svg" alt="Close Menu" class="close-icon">
+        <!-- Ссылки меню -->
+    </div>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+        <section id="home" class="hero container">
+            <div class="hero-text">
+                <h1>Learn Any Foreign Language</h1>
+                <!-- Маленькая иконка лампочки -->
+                <img src="./images/header__icon_lamp.png" alt="Lightbulb" class="lightbulb-icon">
+                <p>With our teachers who write a program for each student, you will be able to make your first sketch
+                    after the first lesson.</p>
+                <button class="cta-btn">Get started</button>
+            </div>
+            <div class="hero-image">
+                <!-- Девушка в наушниках на фоне карты мира -->
+                <img src="./images/header__image.png" alt="Girl learning languages">
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ НАВЫКИ -->
+        <section id="skills" class="skills container">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-grid">
+                <!-- Карточка 1: Speaking -->
+                <div class="skill-card speaking">
+                    <img src="./images/skills-speaking.png" alt="Speaking">
+                    <h3>Speaking</h3>
+                    <p>Improve your English skills and confidence. Live classes and interactive lessons online. 20%
+                        extra free for a limited time only</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+
+                <!-- Карточка 2: Writing -->
+                <div class="skill-card">
+                    <img src="./images/skills-writing.png" alt="Writing">
+                    <h3>Writing</h3>
+                    <p>One of the most important and extensive areas of natural science, the science that studies
+                        substances, also their composition</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+
+                <!-- Карточка 3: Reading -->
+                <div class="skill-card">
+                    <img src="./images/skills-reading.png" alt="Reading">
+                    <h3>Reading</h3>
+                    <p>Perception and response actions of the user resulting from the use and/or upcoming use of the
+                        product, system or service</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+
+                <!-- Карточка 4: Listening -->
+                <div class="skill-card">
+                    <img src="/images/skills-listening.png" alt="Listening">
+                    <h3>Listening</h3>
+                    <p>Here you can find activities to practise your listening skills. Listening will help you to
+                        improve your understanding</p>
+                    <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ О НАС -->
+        <section id="about" class="about container">
+            <div class="about-text">
+                <h2 class="section-title">About Us</h2>
+                <p>The model offers a framework for discussing problems related to the user's experience, as well as
+                    possible ways and means of solving them. Application development begins at the top level (strategy),
+                    where the future software product is described quite abstractly from the point of view of the
+                    expectations of both users and the customer.</p>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>800</h3>
+                        <p>Pupils</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>18</h3>
+                        <p>Teachers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>6</h3>
+                        <p>Foreign languages</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <!-- Иллюстрация с горой и флагом -->
+                <img src="./images/Business competition-bro 1.png" alt="Climbing the mountain of success">
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ЦЕНЫ -->
+        <section id="pricing" class="pricing container">
+            <h2 class="section-title">Pricing</h2>
+
+            <div class="pricing-grid">
+                <!-- Тариф 1 -->
+                <div class="pricing-card">
+                    <img src="./images/pricing-self-study.png" alt="Self-study online course">
+                    <h3>Self-study online course</h3>
+                    <p>Start learning English online in live classes with qualified EC teachers and students from all
+                        over the world.</p>
+                    <div class="price-tag">£5.99 <span>per month</span></div>
+                </div>
+
+                <!-- Тариф 2 -->
+                <div class="pricing-card">
+                    <img src="./images/pricing-live.png" alt="Live online classes">
+                    <h3>Live online classes</h3>
+                    <p>Interactive group classes with expert teachers. Free 7-day trial</p>
+                    <div class="price-tag">£12.99 <span>per month</span></div>
+                </div>
+
+                <!-- Тариф 3 -->
+                <div class="pricing-card">
+                    <img src="./images/pricing-personal.png" alt="Personal Tuition">
+                    <h3>Personal Tuition</h3>
+                    <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
+                    <div class="price-tag">£20.99 <span>per month</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ КОНТАКТЫ -->
+        <section id="contacts" class="contacts container">
+            <div class="contact-image">
+                <!-- Человек, бегущий с бумажным самолетиком -->
+                <img src="./images/ContactUs_section's_image.png" alt="Running with paper plane">
+            </div>
+
+            <div class="contact-text">
+                <h2 class="section-title">Contact Us</h2>
+                <p>Discover your current English level by taking our free online English test. Sign up to our newsletter
+                    for learning tips and free resources</p>
+
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter Your E-mail" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ САЙТА -->
+    <footer class="footer container">
+        <div class="footer-logo">
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms and Conditions</a>
+            <span>•</span>
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </footer>
+
+    <!-- Подключение JS для работы мобильного меню -->
+    <script src="./js/main.js"></script>
+    <script src="./js/materialize.min.js"></script>
+
+</body>
+
+</html>
