@@ -17,7 +17,7 @@ body {
 
 /* Общий контейнер */
 .container {
-  max-width: 1340px; /* Было 1200px, стало 1600px */
+  max-width: 1350px; /* Было 1200px, стало 1600px */
   margin: 0 auto;
   /* Немного увеличим отступы для широких экранов */
 }
@@ -43,11 +43,15 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 48px;
+  padding-top: 47px;
+}
+
+.logo {
+  margin-left: 5px;
 }
 
 .nav-bar-box {
-  padding-left: 9px;
+  padding-left: 11px;
 }
 
 .nav-bar {
@@ -80,7 +84,8 @@ button {
 }
 
 .button-box {
-  padding-top: 10px;
+  padding-top: 11px;
+  padding-right: 6px;
 }
 
 .button__style:hover {
@@ -118,46 +123,68 @@ button {
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-text {
+  height: 690px;
+
   position: relative; /* ВАЖНО: без этого лампочка позиционируется относительно всей страницы и улетает вправо */
   max-width: 50%;
 }
 
 .hero-text h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  white-space: pre-line;
+  font-size: 62px;
+  font-weight: 700; /* Жирное начертание */
+  line-height: 1.29;
+  letter-spacing: 0.65px;
+  text-align: left; /* Выравнивание по левому краю */
+
+  height: 250px;
+  padding-top: 99px;
+  padding-left: 4px;
 }
 
-/* Иконка лампочки рядом с заголовком */
 /* Позиционируем лампочку строго рядом с заголовком */
 .lightbulb-icon {
   position: absolute;
-  top: -15px; /* Сдвигаем вверх на уровень верхней части текста */
-  right: -70px; /* Сдвигаем вправо за пределы текста */
-  width: 60px;
+  top: 190px; /* Сдвигаем вверх на уровень верхней части текста */
+  left: 427px;
+
+  width: 119.75px;
+  height: auto;
 }
 
 .hero-text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
   color: #8f95a5;
-  margin-bottom: 40px;
+  padding-top: 127px;
+  padding-left: 1px;
 }
 
 .cta-btn {
-  background-color: #263238;
+  width: 438px;
+  height: 118px;
+  margin-bottom: 5px;
+  background: #263238;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
   color: #ffffff;
-  padding: 20px 50px;
-  border-radius: 5px;
-  font-size: 18px;
+  margin-top: 62px;
+  margin-left: 4px;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
+  margin-top: 48px;
+  margin-left: 12px;
 }
 
 /* --- Секция Навыки (Skills) --- */
@@ -165,7 +192,7 @@ button {
   padding: 80px 0;
 }
 
-/* Сетка 2x2, где первая карточка (Speaking) занимает 2 ряда */
+/* Сетка */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки для широкого экрана */
