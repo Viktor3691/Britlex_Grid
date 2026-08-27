@@ -1,0 +1,36 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 колонки для широкого экрана */
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Первая карточка (Speaking) занимает 2 колонки и 2 ряда слева */
+.skill-card:first-child {
+  grid-column: span 1; /* В оригинале она забирает много места, но тут важна высота */
+  grid-row: span 2;
+  /* Делаем карточку Speaking выше остальных */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Остальные карточки занимают по 1 месту */
+.skill-card {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

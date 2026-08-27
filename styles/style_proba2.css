@@ -205,50 +205,146 @@ button {
 
 /* --- Секция Навыки (Skills) --- */
 .skills {
-  padding: 80px 0;
+  padding-top: 94px;
 }
 
 /* Сетка */
-.skills-grid {
+
+.zero {
+  padding-top: 55px;
+}
+
+.skills__grid-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 колонки для широкого экрана */
-  grid-template-rows: auto auto;
-  gap: 20px;
+  gap: 20px 18px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 531px 343px;
+  grid-template-areas:
+    "speaking-card writing-card reading-card"
+    "speaking-card listening-card listening-card";
 }
-
-.skill-card {
-  background-color: #f5f5f5;
-  padding: 40px;
+.skills__speaking-card {
+  grid-area: speaking-card;
+}
+.skills__writing-card {
+  grid-area: writing-card;
+}
+.skills__reading-card {
+  grid-area: reading-card;
+}
+.skills__listening-card-flex {
+  grid-area: listening-card;
+  display: flex;
+  justify-content: space-between;
+}
+.skills__card {
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Первая карточка (Speaking) занимает 2 колонки и 2 ряда слева */
-.skill-card:first-child {
-  grid-column: span 1; /* В оригинале она забирает много места, но тут важна высота */
-  grid-row: span 2;
-  /* Делаем карточку Speaking выше остальных */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Остальные карточки занимают по 1 месту */
-.skill-card {
   background-color: #f5f5f5;
-  padding: 40px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
+.skills__speaking-image-file {
+  padding: 35px 0 0 20px;
+}
+.skills__writing-image-file {
+  padding-left: 120px;
+  margin-top: -4px;
+}
+.skills__reading-image-file {
+  padding-top: 8px;
+  margin-left: -2px;
+}
+.skills__listening-image-file {
+  padding: 44px 30px 0 0;
+}
+.skills__h3-style {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+.skills__speaking_h3-style {
+  padding: 1px 0 5px 40px;
+  margin-top: -3px;
+}
+.skills__writing_h3-style {
+  padding-left: 39px;
+  margin-top: -45px;
+}
+.skills__reading_h3-style {
+  padding-left: 37px;
+  margin-top: -8px;
+}
+.skills__listening_h3-style {
+  padding: 44px 0 0 45px;
+}
+.skills__p-style {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+}
+.skills__speaking_p-style-1 {
+  max-width: 347px;
+  margin-left: 39px;
+}
+.skills__speaking_p-style-2 {
+  max-width: 340px;
+  margin: 24px 0 35px 40px;
+}
+.skills__writing_p-style {
+  max-width: 347px;
+  margin-left: 38px;
+  margin-top: -8px;
+}
+.skills__reading_p-style {
+  max-width: 360px;
+  margin-left: 39px;
+  margin-top: -14px;
+}
+.skills__listening_p-style {
+  max-width: 335px;
+  margin-left: 45px;
+  margin-top: -5px;
+  font-size: 16px;
+}
+.skills__button__style {
+  width: 218px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #263238;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.skills__speaking_button__style {
+  margin-left: 40px;
+  width: 230px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #263238;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.skills__writing_button__style {
+  margin: 31px 0 0 38px;
+}
+.skills__reading_button__style {
+  margin: 34px 0 0 40px;
+}
+.skills__listening_button__style {
+  margin: 24px 0 0 41px;
+}
+
+/*  */
 
 .skill-card img {
   max-width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: contain;
   margin-bottom: 30px;
 }
@@ -472,5 +568,108 @@ button {
   .footer {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skills__headline_text-h2 {
+    padding: 48px 0 0 0px;
+    margin-bottom: 51px;
+  }
+  .skills__grid-box {
+    margin-left: 2px;
+    gap: 13px 12px;
+    grid-template-columns: 303px 302px 302px;
+    grid-template-rows: 442px 241px;
+  }
+  .skills__listening-card-flex {
+    justify-content: space-between;
+  }
+  .skills__speaking-image-file {
+    width: 260px;
+    padding: 0;
+    margin: 0 0 0 22px;
+  }
+  .skills__writing-image-file {
+    height: 205px;
+    padding-left: 78px;
+    margin-top: 6px;
+  }
+  .skills__reading-image-file {
+    width: 243px;
+    padding-top: 16px;
+    margin-left: 4px;
+    padding-right: 0;
+  }
+  .skills__listening-image-file {
+    width: 254px;
+    padding: 0;
+    margin: 33px 17px 0 0;
+  }
+  .skills__h3-style {
+    font-size: 22px;
+  }
+  .skills__speaking_h3-style {
+    padding: 0;
+    margin: 1px 0 -9px 29px;
+  }
+  .skills__writing_h3-style {
+    padding-left: 0;
+    margin: -29px 0 -15px 30px;
+  }
+  .skills__reading_h3-style {
+    padding-left: 0;
+    margin: 4px 0 -18px 27px;
+  }
+  .skills__listening_h3-style {
+    padding: 0;
+    margin: 4px 0 -14px 30px;
+  }
+  .skills__p-style {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .skills__speaking_p-style-1 {
+    max-width: 250px;
+    margin-left: 28px;
+  }
+  .skills__speaking_p-style-2 {
+    max-width: 200px;
+    margin: 21px 0 24px 28px;
+  }
+  .skills__writing_p-style {
+    max-width: 245px;
+    margin-left: 30px;
+    margin-top: 2px;
+  }
+  .skills__reading_p-style {
+    max-width: 245px;
+    margin-left: 27px;
+    margin-top: 2px;
+  }
+  .skills__listening_p-style {
+    max-width: 300px;
+    margin-left: 33px;
+    margin-top: 0;
+  }
+  .skills__button__style {
+    width: 196px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .skills__speaking_button__style {
+    margin-left: 28px;
+    width: 196px;
+    height: 57px;
+  }
+  .skills__writing_button__style {
+    margin: 22px 0 0 30px;
+  }
+  .skills__reading_button__style {
+    margin: 23px 0 0 28px;
+  }
+  .skills__listening_button__style {
+    margin: 17px 0 0 30px;
   }
 }
