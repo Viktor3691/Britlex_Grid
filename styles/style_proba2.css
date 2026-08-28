@@ -42,8 +42,6 @@ button {
 .section-title {
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 40px;
-  text-align: center;
 }
 
 /* Кнопки */
@@ -207,16 +205,20 @@ button {
 .skills {
   padding-top: 94px;
 }
+.skills_h2 {
+  text-align: center;
+  margin-bottom: 97px;
+}
 
 /* Сетка */
 
 .zero {
-  padding-top: 55px;
+  padding-top: 97px;
 }
 
 .skills__grid-box {
   display: grid;
-  gap: 20px 18px;
+  gap: 14px 14px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 531px 343px;
   grid-template-areas:
@@ -242,18 +244,19 @@ button {
   background-color: #f5f5f5;
 }
 .skills__speaking-image-file {
-  padding: 35px 0 0 20px;
+  padding-top: 35px;
+  padding-left: 24px;
 }
 .skills__writing-image-file {
-  padding-left: 120px;
+  padding-left: 122px;
   margin-top: -4px;
 }
 .skills__reading-image-file {
-  padding-top: 8px;
-  margin-left: -2px;
+  margin-top: 8px;
+  margin-right: -8px;
 }
 .skills__listening-image-file {
-  padding: 44px 30px 0 0;
+  padding: 50px 34px 0 0;
 }
 .skills__h3-style {
   font-weight: 600;
@@ -262,16 +265,16 @@ button {
   color: #263238;
 }
 .skills__speaking_h3-style {
-  padding: 1px 0 5px 40px;
   margin-top: -3px;
+  padding-left: 44px;
 }
 .skills__writing_h3-style {
-  padding-left: 39px;
-  margin-top: -45px;
+  padding-left: 42px;
+  margin-top: -46px;
 }
 .skills__reading_h3-style {
-  padding-left: 37px;
-  margin-top: -8px;
+  padding-left: 39px;
+  margin-top: -9px;
 }
 .skills__listening_h3-style {
   padding: 44px 0 0 45px;
@@ -282,14 +285,11 @@ button {
   line-height: 24px;
   color: #8f95a5;
 }
-.skills__speaking_p-style-1 {
-  max-width: 347px;
-  margin-left: 39px;
+.skills__speaking_p-sty {
+  /* max-width: 347px;
+  margin-left: 44px; */
 }
-.skills__speaking_p-style-2 {
-  max-width: 340px;
-  margin: 24px 0 35px 40px;
-}
+
 .skills__writing_p-style {
   max-width: 347px;
   margin-left: 38px;
@@ -372,8 +372,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0;
-  gap: 50px;
+}
+
+.about_h2 {
+  margin-top: 120px;
 }
 
 .about-text {
@@ -408,6 +410,10 @@ button {
 /* --- Секция Цены (Pricing) --- */
 .pricing {
   padding: 80px 0;
+}
+
+.pricing_h2 {
+  text-align: center;
 }
 
 .pricing-grid {
@@ -516,60 +522,6 @@ button {
 }
 
 /* --- Адаптивность (Мобильная версия) --- */
-@media (max-width: 992px) {
-  .hero,
-  .about,
-  .contacts {
-    flex-direction: column-reverse; /* Для hero и about картинка будет внизу */
-    text-align: center;
-  }
-  .hero-text,
-  .about-text,
-  .contact-text,
-  .hero-image,
-  .about-image,
-  .contact-image {
-    max-width: 100%;
-  }
-  .skills-grid,
-  .pricing-grid {
-    grid-template-columns: 1fr; /* Все блоки в один столбец */
-  }
-  .skill-card:first-child {
-    grid-row: auto; /* Сброс высоты первой карточки */
-  }
-  .lightbulb-icon {
-    position: static;
-    display: block;
-    margin: 0 auto 10px;
-  }
-  .stats {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-menu,
-  .header-btn {
-    display: none; /* Прячем меню и кнопку на мобильном */
-  }
-  .menu-icon {
-    display: block; /* Показываем бургер */
-  }
-  .section-title {
-    font-size: 32px;
-  }
-  .hero-text h1 {
-    font-size: 36px;
-  }
-  .subscribe-form {
-    flex-direction: column;
-  }
-  .footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
 
 @media screen and (max-width: 992px) {
   .skills__headline_text-h2 {
@@ -671,5 +623,28 @@ button {
   }
   .skills__listening_button__style {
     margin: 17px 0 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu,
+  .header-btn {
+    display: none; /* Прячем меню и кнопку на мобильном */
+  }
+  .menu-icon {
+    display: block; /* Показываем бургер */
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
   }
 }
