@@ -285,9 +285,8 @@ button {
   line-height: 24px;
   color: #8f95a5;
 }
-.skills__speaking_p-sty {
-  /* max-width: 347px;
-  margin-left: 44px; */
+.skills__speaking_p {
+  padding-top: 10px;
 }
 
 .skills__writing_p-style {
