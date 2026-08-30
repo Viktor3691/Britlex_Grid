@@ -30,12 +30,17 @@ button {
   margin: 0;
 }
 
+.h2-styles {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+
 /* Общий контейнер */
 .container {
   max-width: 1350px; /* Было 1200px, стало 1600px */
   margin: 0 auto;
-  border: 2px solid #263238;
-  /* Немного увеличим отступы для широких экранов */
 }
 
 /* Заголовки секций */
@@ -48,7 +53,7 @@ button {
 button {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  border: none;
+
   transition: all 0.3s ease;
 }
 
@@ -138,6 +143,7 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 4px;
 }
 
 .hero-text {
@@ -203,7 +209,7 @@ button {
 
 /* --- Секция Навыки (Skills) --- */
 .skills {
-  padding-top: 94px;
+  padding-top: 96px;
 }
 .skills_h2 {
   text-align: center;
@@ -211,10 +217,6 @@ button {
 }
 
 /* Сетка */
-
-.zero {
-  padding-top: 97px;
-}
 
 .skills__grid-box {
   display: grid;
@@ -277,7 +279,8 @@ button {
   margin-top: -9px;
 }
 .skills__listening_h3-style {
-  padding: 44px 0 0 45px;
+  padding-top: 50px;
+  padding-left: 48px;
 }
 .skills__p-style {
   font-weight: 400;
@@ -286,7 +289,8 @@ button {
   color: #8f95a5;
 }
 .skills__speaking_p {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 44px;
 }
 
 .skills__writing_p-style {
@@ -306,8 +310,6 @@ button {
   font-size: 16px;
 }
 .skills__button__style {
-  width: 218px;
-  height: 60px;
   border-radius: 5px;
   background-color: #263238;
   font-family: "Poppins", sans-serif;
@@ -317,26 +319,27 @@ button {
   color: #ffffff;
 }
 .skills__speaking_button__style {
-  margin-left: 40px;
   width: 230px;
   height: 60px;
-  border-radius: 5px;
-  background-color: #263238;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  color: #ffffff;
+
+  margin-top: 34px;
+  margin-left: 44px;
 }
 .skills__writing_button__style {
-  margin: 31px 0 0 38px;
+  width: 218px;
+  height: 60px;
+
+  margin: 31px 0 0 41px;
 }
 .skills__reading_button__style {
-  margin: 34px 0 0 40px;
+  width: 218px;
+  height: 60px;
+  margin: 34px 0 0 41px;
 }
 .skills__listening_button__style {
-  margin: 24px 0 0 41px;
+  width: 216px;
+  height: 60px;
+  margin: 24px 0 0 45px;
 }
 
 /*  */
@@ -374,41 +377,87 @@ button {
 }
 
 .about_h2 {
-  margin-top: 120px;
+  margin-top: 230px;
+  margin-left: 6px;
 }
 
 .about-text {
-  max-width: 50%;
+  max-width: 712px;
+  height: 644px;
 }
 
-.about-text p {
+.about_us__text-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   color: #8f95a5;
-  margin-bottom: 30px;
+}
+
+.about_us__text-p_alignment {
+  max-width: 635px;
+  margin: 24px 0 40px 4px;
 }
 
 .stats {
   display: flex;
-  gap: 50px;
+  justify-content: flex-start;
+  text-align: center;
 }
 
-.stat-item h3 {
-  font-size: 32px;
-  margin-bottom: 5px;
+.stat-item {
+  margin-left: 5px;
+  margin-right: 128px;
 }
 
-.stat-item p {
+.stat-item:nth-child(2) {
+  margin-right: 90px;
+}
+
+.stat-item:last-child {
+  margin-right: 0;
+}
+
+.about_us__the_number_text-h2 {
+  text-align: center;
+}
+
+.about_us__the_number-Teachers_text-h2 {
+  margin-left: 10px;
+}
+
+.about_us__text-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   color: #8f95a5;
-  font-size: 14px;
+}
+
+.about_us__the_number-Pupils_text-p {
+  text-align: center;
+  margin-top: -3px;
+}
+
+.about_us__the_number-Teachers_text-p {
+  text-align: center;
+  margin: -2px 0 0 6px;
+}
+
+.about_us__the_number-Foreign-lang_text-p {
+  text-align: center;
+  margin: -4px -9px 0 0;
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
+
+  margin-top: 257px;
+  margin-right: 14px;
 }
 
 /* --- Секция Цены (Pricing) --- */
 .pricing {
-  padding: 80px 0;
+  padding-top: 184px;
 }
 
 .pricing_h2 {
@@ -418,50 +467,117 @@ button {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.pricing-card {
-  text-align: center;
+  gap: 10px;
 }
 
 .pricing-card img {
-  height: 200px;
-  object-fit: contain;
-  margin-bottom: 30px;
+  padding-top: 58px;
+  padding-left: 29px;
 }
 
-.pricing-card h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.pricing-card:nth-child(2) img {
+  padding-top: 84px;
+  padding-left: 26px;
 }
 
-.pricing-card p {
+.pricing-card:nth-child(3) img {
+  padding-top: 58px;
+  padding-left: 52px;
+}
+
+.pricing__h3-style {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #263238;
+}
+
+.pricing__self-study_h3-style {
+  padding-top: 33px;
+  padding-left: 4px;
+}
+
+.pricing__live_h3-style {
+  margin-top: 35px;
+  margin-left: 28px;
+}
+
+.pricing__personal-tuition_h3-style {
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.pricing__p-style {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
   color: #8f95a5;
-  margin-bottom: 30px;
+}
+
+.pricing__self-study_p-style {
+  max-width: 430px;
+  padding-top: 18px;
+}
+
+.pricing__live_p-style {
+  max-width: 430px;
+  padding: 22px 0 0 25px;
+}
+
+.pricing__personal-tuition_p-style {
+  max-width: 430px;
+  padding-top: 19px;
 }
 
 .price-tag {
-  background-color: #f5f5f5;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: 600;
   display: inline-block;
+  width: 240px;
+  height: 45px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.price-tag_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .price-tag span {
   color: #8f95a5;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.price1 {
+  margin-top: 28px;
+}
+
+.price2 {
+  margin-top: 58px;
+  margin-left: 27px;
+}
+
+.price3 {
+  margin-top: 57px;
 }
 
 /* --- Секция Контакты (Contacts) --- */
+
 .contacts {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  padding: 80px 0;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 85px;
+  padding-top: 92px;
+}
+
+.container-contacts {
+  max-width: 1390px; /* Было 1200px, стало 1600px */
+  margin: 0 auto;
 }
 
 .contact-image {
@@ -470,35 +586,68 @@ button {
 
 .contact-image img {
   max-width: 100%;
+  padding-top: 165px;
+  padding-left: 7px;
 }
 
 .contact-text {
-  max-width: 50%;
+  max-width: 0.6;
+  margin-right: 10px;
+}
+
+.section-title_h2 {
+  padding-top: 201px;
+  padding-left: 20px;
 }
 
 .contact-text p {
+  max-width: 800px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
   color: #8f95a5;
-  margin-bottom: 30px;
+}
+.section-title_p {
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 .subscribe-form {
   display: flex;
-  gap: 10px;
+  gap: 11px;
+  margin-top: 90px;
+  margin-left: 23px;
 }
 
 .subscribe-form input {
-  flex: 1;
+  width: 450px;
+  height: 82px;
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
 }
 
+.contact_us__input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8f95a5;
+  font-family: "Poppins", sans-serif;
+}
+
 .subscribe-form button {
-  background-color: #263238;
+  width: 264px;
+  height: 81px;
+  background: #263238;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
   color: #ffffff;
-  padding: 15px 30px;
-  border-radius: 5px;
+  margin-top: -2px;
 }
 
 /* --- Подвал (Footer) --- */
@@ -506,8 +655,22 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding-top: 42px;
+  padding-left: 5px;
   border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  padding-left: 5px;
+}
+
+.footer-line {
+  max-width: 1338px;
+  height: 2px;
+  background: #c4c4c4;
+
+  margin: 0 auto;
+  margin-top: 126px;
 }
 
 .footer-links {
@@ -517,6 +680,9 @@ button {
 
 .footer-links a {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
   color: #8f95a5;
 }
 

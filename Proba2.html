@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/style_proba2.css">
+    <!-- <link rel="stylesheet" href="./styles/style_proba2.css"> -->
+    <link rel="stylesheet" href="./styles/proba3.css">
 </head>
 
 <body>
@@ -40,10 +41,26 @@
     </header>
 
     <!-- МОБИЛЬНОЕ МЕНЮ (скрыто по умолчанию) -->
-    <div class="mobile-menu">
-        <!-- Иконка крестика для закрытия меню -->
-        <img src="./images/close-sidenav.svg" alt="Close Menu" class="close-icon">
-        <!-- Ссылки меню -->
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo" class="mobile-logo">
+            <img src="./images/close-sidenav.svg" alt="Close Menu" class="close-icon">
+        </div>
+
+        <div class="mobile-menu__line"></div>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#home">Home</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#skills">Skills</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#about">About Us</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#pricing">Pricing</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <button class="button__style mobile-cta">Let's Talk</button>
     </div>
 
     <main>
@@ -91,11 +108,12 @@
                         20% extra free for a limited time only <br>
                         <br>
                         Learn English online and improve your <br>
-                        skills through our high-quality courses and <br>
-                        resources – all designed for adult <br>
+                        skills through our high-quality courses <br>
+                        and resources – all designed for adult <br>
                         language learners.
                     </p>
-                    <button class="button__style skills__speaking_button__style">Learn more</button>
+                    <button class="button__style skills__button__style skills__speaking_button__style">Learn
+                        more</button>
                 </div>
 
                 <div class="skills__card skills__writing-card">
@@ -149,23 +167,35 @@
         <section id="about" class="about container">
             <div class="about-text">
                 <h2 class="section-title about_h2">About Us</h2>
-                <p>The model offers a framework for discussing problems related to the user's experience, as well as
-                    possible ways and means of solving them. Application development begins at the top level (strategy),
-                    where the future software product is described quite abstractly from the point of view of the
-                    expectations of both users and the customer.</p>
+                <p class="about_us__text-p about_us__text-p_alignment">
+                    The model offers a framework for discussing problems related <br>
+                    to the user's experience, as well as possible ways and means of <br>
+                    solving them. Application development begins at the top level <br>
+                    (strategy), where the future software product is described quite <br>
+                    abstractly from the point of view of the expectations of both <br>
+                    users and the customer.</p>
 
                 <div class="stats">
                     <div class="stat-item">
-                        <h3>800</h3>
-                        <p>Pupils</p>
+                        <h2 class="h2-styles about_us__the_number_text-h2 about_us__the_number-Pupils_text-h2">800</h2>
+
+                        <p class="about_us__text-p about_us__the_number-Pupils_text-p">Pupils</p>
+
                     </div>
                     <div class="stat-item">
-                        <h3>18</h3>
-                        <p>Teachers</p>
+                        <h2 class="h2-styles about_us__the_number_text-h2 about_us__the_number-Teachers_text-h2">
+                            18
+                        </h2>
+
+                        <p class="about_us__text-p about_us__the_number-Teachers_text-p">Teachers</p>
+
                     </div>
                     <div class="stat-item">
-                        <h3>6</h3>
-                        <p>Foreign languages</p>
+                        <h2 class="h2-styles about_us__the_number-Foreign-lang_text-h2">6</h2>
+
+                        <p class="about_us__text-p about_us__the_number-Foreign-lang_text-p">Foreign languages
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -184,26 +214,38 @@
                 <!-- Тариф 1 -->
                 <div class="pricing-card">
                     <img src="./images/pricing-self-study.png" alt="Self-study online course">
-                    <h3>Self-study online course</h3>
-                    <p>Start learning English online in live classes with qualified EC teachers and students from all
+
+                    <h3 class="pricing__h3-style pricing__self-study_h3-style">Self-study online course</h3>
+
+                    <p class="pricing__p-style pricing__self-study_p-style">Start learning English online in live
+                        classes with
+                        qualified EC teachers and students from all
                         over the world.</p>
-                    <div class="price-tag">£5.99 <span>per month</span></div>
+                    <div class="price-tag price-tag_text price1">£5.99 <span>per month</span></div>
                 </div>
 
                 <!-- Тариф 2 -->
                 <div class="pricing-card">
                     <img src="./images/pricing-live.png" alt="Live online classes">
-                    <h3>Live online classes</h3>
-                    <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-                    <div class="price-tag">£12.99 <span>per month</span></div>
+                    <h3 class="pricing__h3-style pricing__live_h3-style">Live online classes</h3>
+
+                    <p class="pricing__p-style pricing__live_p-style">Interactive group classes with expert teachers.
+                        Free 7-day trial</p>
+
+                    <div class=" price-tag price-tag_text price2">£12.99 <span>per month</span>
+                    </div>
                 </div>
 
                 <!-- Тариф 3 -->
                 <div class="pricing-card">
                     <img src="./images/pricing-personal.png" alt="Personal Tuition">
-                    <h3>Personal Tuition</h3>
-                    <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-                    <div class="price-tag">£20.99 <span>per month</span></div>
+
+                    <h3 class="pricing__h3-style pricing__personal-tuition_h3-style">Personal Tuition</h3>
+
+                    <p class="pricing__p-style pricing__personal-tuition_p-style">Online one-to-one English tutoring –
+                        enjoy our first session for only $1</p>
+
+                    <div class="price-tag price-tag_text price3">£20.99 <span>per month</span></div>
                 </div>
             </div>
         </section>
@@ -216,20 +258,24 @@
             </div>
 
             <div class="contact-text">
-                <h2 class="section-title">Contact Us</h2>
-                <p>Discover your current English level by taking our free online English test. Sign up to our newsletter
-                    for learning tips and free resources</p>
+                <h2 class="section-title section-title_h2">Contact Us</h2>
+
+                <p class="section-title_p">Discover your current English level by taking our free online English test.
+                    Sign <br>
+                    up to our newsletter for learning tips and free resources</p>
 
                 <form class="subscribe-form">
-                    <input type="email" placeholder="Enter Your E-mail" required>
+                    <input class="contact_us__input" type="email" placeholder="Enter Your E-mail" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </section>
     </main>
+    <div class="footer-line"></div>
 
     <!-- ПОДВАЛ САЙТА -->
     <footer class="footer container">
+
         <div class="footer-logo">
             <img src="./images/logo_Britlex.svg" alt="Britlex Logo">
         </div>

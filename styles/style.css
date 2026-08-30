@@ -666,6 +666,7 @@ nav,
 .about_us__the_number__flex-box {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 .about_us__the_number_of-Teachers__text-box {
   margin-left: 43px;
