@@ -49,13 +49,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 49px;
+  padding-top: 45px;
 }
 
 .nav-bar {
   display: flex;
   justify-content: flex-start;
-  margin-top: 4px;
+  margin-top: 0px;
   margin-left: 40px;
 }
 
@@ -77,6 +77,10 @@ button {
 .nav-bar-link {
   font-weight: 500;
   font-size: 20px;
+}
+
+.button-box {
+  margin-top: 10px;
 }
 
 .button__style:hover {
@@ -105,27 +109,26 @@ button {
 /* --- Главный экран (Hero) --- */
 .hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 40px;
-  padding: 60px 0;
+  gap: 25px;
 }
 
 .hero-text {
-  max-width: 600px;
+  width: 535px;
   position: relative;
 }
 .hero-text h1 {
-  font-size: 62px;
-  line-height: 1.2;
+  font-size: 63px;
+  line-height: 1.26;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-top: 102px;
 }
 
 .lightbulb-icon {
   position: absolute;
-  top: 20px;
-  right: -80px;
+  top: 194px;
+  right: -15px;
   width: 120px;
   height: auto;
 }
@@ -133,7 +136,8 @@ button {
 .hero-text p {
   font-size: 24px;
   color: #8f95a5;
-  margin-bottom: 40px;
+  padding-top: 38px;
+  padding-bottom: 57px;
 }
 
 .cta-btn {
@@ -146,16 +150,17 @@ button {
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
-  padding: 0;
 }
 
 .hero-image {
-  max-width: 700px;
+  max-width: 1;
+  padding-top: 57px;
+  padding-left: 133px;
 }
 
 /* --- Секция Навыки (Skills) --- */
 .skills {
-  padding: 80px 0;
+  padding: 108px 0;
 }
 
 .skills__grid-box {
