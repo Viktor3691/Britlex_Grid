@@ -160,7 +160,7 @@ button {
 
 /* --- Секция Навыки (Skills) --- */
 .skills {
-  padding: 108px 0;
+  margin-top: 110px;
 }
 
 .skills__grid-box {
@@ -171,52 +171,7 @@ button {
   grid-template-areas:
     "speaking writing reading"
     "speaking listening listening";
-}
-
-.skills__card {
-  background: #f5f5f5;
-  border-radius: 10px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.skills__image-box {
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.skills__image-box img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.skills__h3-style {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.skills__p-style {
-  font-size: 16px;
-  color: #8f95a5;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  flex-grow: 1;
-}
-
-.skills__button__style {
-  width: 200px;
-  padding: 15px 0;
-  border-radius: 5px;
-  border: none;
-  background: #263238;
-  color: #ffffff;
-  font-size: 18px;
-  align-self: flex-start;
+  padding-top: 34px;
 }
 
 .skills__speaking-card {
@@ -231,6 +186,96 @@ button {
 .skills__listening-card-flex {
   grid-area: listening;
 }
+
+.skills__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.skills__image-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills__image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.skills__h3-style {
+  font-size: 30px;
+  height: 32px;
+}
+
+.skills__p-style {
+  font-size: 16px;
+  color: #8f95a5;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.skills__button__style {
+  width: 200px;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  background: #263238;
+  color: #ffffff;
+  font-size: 18px;
+  align-self: flex-start;
+}
+
+/* skills__speaking */
+.skills__speaking-image-box {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.skills__speaking_h3-style {
+  padding-left: 38px;
+}
+
+.skills__speaking_p {
+  padding-left: 35px;
+}
+
+.skills__speaking_button__style {
+  width: 230px;
+  height: 60px;
+
+  margin-left: 40px;
+  margin-bottom: 14px;
+}
+
+/* skills__writing */
+.skills__writing-image-box {
+  padding-left: 120px;
+}
+
+.skills__writing_h3-style {
+  padding-left: 37px;
+  margin-top: -25px;
+}
+
+.skills__writing_p-style {
+  max-width: 347px;
+  margin-left: 38px;
+  margin-top: -10px;
+}
+
+.skills__writing_button__style {
+  width: 218px;
+  height: 60px;
+
+  margin-left: 38px;
+}
+
+/* skills__listening */
 
 .skills__listening-card-flex {
   display: flex;
