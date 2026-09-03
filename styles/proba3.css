@@ -162,7 +162,7 @@ button {
 
 /* --- Секция Навыки (Skills) --- */
 .skills {
-  margin-top: 110px;
+  margin-top: 105px;
 }
 
 .skills__grid-box {
@@ -173,7 +173,7 @@ button {
   grid-template-areas:
     "speaking writing reading"
     "speaking listening listening";
-  padding-top: 34px;
+  padding-top: 38px;
 }
 
 .skills__card {
@@ -319,25 +319,26 @@ button {
 }
 
 .skills__listening-image-box {
-  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-top: 4px;
 }
 
 .skills__listening_h3-style {
-  padding-top: 50px;
-  padding-left: 48px;
+  margin-top: -2px;
+  margin-left: 45px;
 }
 
 .skills__listening_p-style {
   max-width: 335px;
-  margin-left: 45px;
-  margin-top: -5px;
-  font-size: 16px;
+  margin-left: 46px;
+  margin-top: 25px;
 }
 
 .skills__listening_button__style {
   width: 216px;
   height: 60px;
-  margin: 24px 0 0 45px;
+  margin-left: 43px;
+  margin-top: 26px;
 }
 
 /* --- Секция О нас (About Us) --- */
