@@ -37,11 +37,60 @@ button {
   padding: 0 5px;
 }
 
+/* Learn Any Foreign Language */
+
+.h1-style {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  /* or 125% */
+
+  color: #000000;
+}
+
 .section-title {
   font-size: 48px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 60px;
+}
+
+.h3-style {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #263238;
+}
+
+.p-style {
+  font-size: 20px;
+  color: #8f95a5;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  min-height: 120px;
+}
+
+.p-style24 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #8f95a5;
+}
+
+.p-style16 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #8f95a5;
 }
 
 /* --- Шапка сайта --- */
@@ -118,11 +167,13 @@ button {
   width: 535px;
   position: relative;
 }
-.hero-text h1 {
-  font-size: 63px;
-  line-height: 1.26;
-  font-weight: 700;
+
+.hero-h1 {
   margin-top: 102px;
+}
+
+.hero-p {
+  margin-top: 40px;
 }
 
 .lightbulb-icon {
@@ -131,13 +182,6 @@ button {
   right: -8px;
   width: 120px;
   height: auto;
-}
-
-.hero-text p {
-  font-size: 24px;
-  color: #8f95a5;
-  padding-top: 38px;
-  padding-bottom: 57px;
 }
 
 .cta-btn {
@@ -150,6 +194,10 @@ button {
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
+}
+
+.hero-btn {
+  margin-top: 60px;
 }
 
 .hero-image {
@@ -254,7 +302,7 @@ button {
   height: 60px;
 
   margin-left: 40px;
-  margin-bottom: 92px;
+  margin-top: 35px;
 }
 
 /* skills__writing */
@@ -280,7 +328,7 @@ button {
   height: 60px;
 
   margin-left: 40px;
-  margin-bottom: 45px;
+  margin-top: 84px;
 }
 
 /* skills__reading */
@@ -305,7 +353,7 @@ button {
   height: 60px;
 
   margin-left: 42px;
-  margin-bottom: 45px;
+  margin-top: 34px;
 }
 
 /* skills__listening */
@@ -324,21 +372,21 @@ button {
 }
 
 .skills__listening_h3-style {
-  margin-top: -2px;
-  margin-left: 45px;
+  margin-top: -3px;
+  margin-left: 46px;
 }
 
 .skills__listening_p-style {
   max-width: 335px;
   margin-left: 46px;
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 .skills__listening_button__style {
   width: 216px;
   height: 60px;
-  margin-left: 43px;
-  margin-top: 26px;
+  margin-left: 44px;
+  margin-top: 24px;
 }
 
 /* --- Секция О нас (About Us) --- */
@@ -403,9 +451,6 @@ button {
 
 /* Teachers */
 
-.Teachers_text-h2 {
-}
-
 .Teachers_text-p {
   text-align: center;
 }
@@ -433,30 +478,29 @@ button {
 
 /* --- Секция Цены (Pricing) --- */
 .pricing {
-  padding: 80px 0;
+  margin-top: 111px;
 }
 
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 50px;
+  gap: 10px;
 }
 
 .pricing-card {
   text-align: left;
 }
+
 .pricing-card img {
   display: block;
-  margin: 0 auto 30px;
-  width: 100%;
-  height: 250px;
-  object-fit: contain;
 }
 
 .pricing__h3-style {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #263238;
 }
 .pricing__p-style {
   font-size: 20px;
@@ -478,6 +522,11 @@ button {
   color: #8f95a5;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* Self-study */
+.img-Self-study {
+  margin-left: 26px;
 }
 
 /* --- Секция Контакты (Contacts) --- */
