@@ -68,7 +68,7 @@ button {
 .p-style {
   font-size: 20px;
   color: #8f95a5;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 30px;
   min-height: 120px;
 }
@@ -478,6 +478,12 @@ button {
 
 /* --- Секция Цены (Pricing) --- */
 .pricing {
+  margin-top: 50px;
+}
+
+.pricing_h2 {
+  height: 30px;
+  text-align: center;
   margin-top: 111px;
 }
 
@@ -485,6 +491,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  margin-top: 90px;
 }
 
 .pricing-card {
@@ -495,29 +502,23 @@ button {
   display: block;
 }
 
-.pricing__h3-style {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: 0em;
-  color: #263238;
-}
-.pricing__p-style {
-  font-size: 20px;
-  color: #8f95a5;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  min-height: 120px;
-}
-
 .price-tag {
   display: inline-block;
-  background: #eeeeee;
-  padding: 10px 20px;
+  width: 240px;
+  height: 45px;
+  background-color: #eeeeee;
   border-radius: 5px;
-  font-size: 24px;
+}
+
+.price-tag_text {
+  text-align: center;
+  font-size: 30px;
   font-weight: 600;
 }
+.price1 {
+  margin-top: -14px;
+}
+
 .price-tag span {
   color: #8f95a5;
   font-weight: 400;
@@ -526,7 +527,17 @@ button {
 
 /* Self-study */
 .img-Self-study {
-  margin-left: 26px;
+  margin-left: 25px;
+  margin-top: 14px;
+}
+
+.pricing__self-study_h3-style {
+  padding-top: 40px;
+}
+
+.pricing__self-study_p-style {
+  max-width: 430px;
+  padding-top: 19px;
 }
 
 /* --- Секция Контакты (Contacts) --- */
