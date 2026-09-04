@@ -4,402 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Britlex</title>
+    <title>Britlex - Learn Any Foreign Language</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="icon/favicon-96x96.png?v=20260505" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg?v=20260505" />
-
-    <link rel="shortcut icon" href="icon/favicon.ico?v=20260505" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png?v=20260505" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="icon/site.webmanifest?v=20260505" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" href="./styles/style_proba2.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
-    <header class="header" id="home">
-        <div class="container-alignment">
-            <div class="container">
-                <div class="header__flex-box">
 
-                    <div class="header__logo-box">
-                        <img class="logo-file" src="./images/logo_Britlex.svg" alt="logo">
-                    </div>
-
-                    <div class="nav-bar-box">
-                        <ul class="nav-bar">
-                            <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#home"><ya-tr-span
-                                        data-index="0-0" data-translated="false" data-source-lang="en"
-                                        data-target-lang="ru" data-value="Home" data-translation="Главная" data-ch="0"
-                                        data-type="trSpan" style="visibility: inherit !important;">Home</ya-tr-span></a>
-                            </li>
-
-                            <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#skills"><ya-tr-span
-                                        data-index="0-1" data-translated="false" data-source-lang="en"
-                                        data-target-lang="ru" data-value="Skills" data-translation="Навыки" data-ch="0"
-                                        data-type="trSpan"
-                                        style="visibility: inherit !important;">Skills</ya-tr-span></a></li>
-
-                            <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#about_us"><ya-tr-span
-                                        data-index="0-2" data-translated="false" data-source-lang="en"
-                                        data-target-lang="ru" data-value="About Us" data-translation="О нас" data-ch="0"
-                                        data-type="trSpan" style="visibility: inherit !important;">About
-                                        Us</ya-tr-span></a></li>
-                            <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#pricing"><ya-tr-span
-                                        data-index="0-3" data-translated="false" data-source-lang="en"
-                                        data-target-lang="ru" data-value="Pricing" data-translation="Цены" data-ch="0"
-                                        data-type="trSpan"
-                                        style="visibility: inherit !important;">Pricing</ya-tr-span></a></li>
-                            <li class="nav-bar-item"><a class="nav-bar-link button__style" href="#contacts"><ya-tr-span
-                                        data-index="0-4" data-translated="false" data-source-lang="en"
-                                        data-target-lang="ru" data-value="Contacts" data-translation="Контакты"
-                                        data-ch="0" data-type="trSpan"
-                                        style="visibility: inherit !important;">Contacts</ya-tr-span></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="button-box">
-                        <button class="button__style button-file"><ya-tr-span data-index="1-0" data-translated="false"
-                                data-source-lang="en" data-target-lang="ru" data-value="Let's Talk"
-                                data-translation="Поговорить" data-ch="0" data-type="trSpan"
-                                style="visibility: inherit !important;">Let's Talk</ya-tr-span></button>
-                    </div>
-                    <a class="button__style burger sidenav-trigger" data-target="slide-out"><img
-                            class="burger-icon-file" src="./images/burger-button.svg" alt="burger-button"></a>
-
-
-
-                    <nav id="slide-out" class="sidenav">
-                        <div class="sidenav-flex">
-                            <a href="#user"><img class="sidenav-logo-file" src="./images/logo_Britlex.svg"></a>
-
-                            <a class="sidenav-close" href="#!"><img class="sidenav-close-button"
-                                    src="./images/close-sidenav.svg"></a>
-
-                        </div>
-
-                        <ul class="sidenav-navigation-list">
-
-                            <li class="sidenav-navbar-link">
-                                <div class="divider"></div>
-                            </li>
-
-                            <li class="sidenav-navbar-link"><a class="nav-bar-link button__style" href="#home">Home</a>
-                            </li>
-
-                            <li class="sidenav-navbar-link"><a class="nav-bar-link button__style"
-                                    href="#skills">Skills</a>
-                            </li>
-
-                            <li class="sidenav-navbar-link"><a class="nav-bar-link button__style" href="#about_us">About
-                                    Us</a></li>
-
-                            <li class="sidenav-navbar-link"><a class="nav-bar-link button__style"
-                                    href="#pricing">Pricing</a></li>
-
-                            <li class="sidenav-navbar-link"><a class="nav-bar-link button__style"
-                                    href="#contacts">Contacts</a></li>
-
-                        </ul>
-                        <button class="button__style sidenav-button-file">Let's Talk</button>
-                    </nav>
-
-                </div>
-
-                <div class="header__main_flex-box">
-
-
-                    <div class="header__main_left-box">
-                        <div class="header__main_headline-flex-box">
-                            <h1 class="header__main_headline_text-h1"><ya-tr-span data-index="2-0"
-                                    data-translated="false" data-source-lang="en" data-target-lang="ru"
-                                    data-value="Learn " data-translation="Изучить " data-ch="0" data-type="trSpan"
-                                    style="visibility: inherit !important;">Learn </ya-tr-span><br><ya-tr-span
-                                    data-index="2-1" data-translated="false" data-source-lang="en" data-target-lang="ru"
-                                    data-value="Any Foreign Language" data-translation="любой иностранный язык"
-                                    data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Any Foreign
-                                    Language</ya-tr-span></h1>
-                            <img class="header__main_icon-file" src="./images/header__icon_lamp.png" alt="header__icon">
-                        </div>
-                        <p class="header__main_text-p header__main_text-p_alignment"><ya-tr-span data-index="3-0"
-                                data-translated="false" data-source-lang="en" data-target-lang="ru"
-                                data-value="With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson."
-                                data-translation="С нашими преподавателями, которые составляют программу для каждого ученика, вы сможете сделать свой первый набросок уже после первого урока."
-                                data-ch="0" data-type="trSpan" style="visibility: inherit !important;">With our teachers
-                                who
-                                write a program for each student, you will be able to make your first sketch after the
-                                first
-                                lesson.</ya-tr-span></p>
-                        <button class="button__style header__main_button-file"><ya-tr-span data-index="3-1"
-                                data-translated="false" data-source-lang="en" data-target-lang="ru"
-                                data-value="Get started" data-translation="Начать" data-ch="0" data-type="trSpan"
-                                style="visibility: inherit !important;">Get started</ya-tr-span></button>
-                    </div>
-
-                    <div class="header__main_right-box">
-                        <div class="header__main_right_image-box">
-                            <img class="header__main_image-file" src="./images/header__image.png" alt="header__image">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <!-- ШАПКА САЙТА -->
+    <header class="header container">
+        <div class="logo">
+            <!-- Логотип Britlex -->
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo">
         </div>
+
+        <div class="nav-bar-box">
+            <ul class="nav-bar">
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #home">Home</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #skills">Skills</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #about">About Us</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href=" #pricing">Pricing</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="button-box">
+            <button class="button__style button-file">Let's Talk</button>
+        </div>
+
+        <!-- Иконка бургер-меню (для мобильной версии) -->
+        <img src="./images/burger-button.svg" alt="Open Menu" class="menu-icon">
     </header>
 
-    <section class="skills" id="skills">
+    <!-- МОБИЛЬНОЕ МЕНЮ (скрыто по умолчанию) -->
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo" class="mobile-logo">
+            <img src="./images/close-sidenav.svg" alt="Close Menu" class="close-icon">
+        </div>
 
-        <div class="container-alignment">
-            <div class="container">
+        <div class="mobile-menu__line"></div>
 
-                <h2 class="h2-styles skills__headline_text-h2"><ya-tr-span data-index="4-0" data-translated="false"
-                        data-source-lang="en" data-target-lang="ru" data-value="Skills" data-translation="Навыки"
-                        data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Skills</ya-tr-span></h2>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#home">Home</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#skills">Skills</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#about">About Us</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#pricing">Pricing</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
 
-                <div class="skills__grid-box">
+        <button class="button__style mobile-cta">Let's Talk</button>
+    </div>
 
-                    <div class="skills__card skills__speaking-card">
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+        <section id="home" class="hero container">
 
-                        <div class="skills__image-box skills__speaking-image-box">
-                            <img class="skills__speaking-image-file" src="./images/skills-section's__1-st_image.png"
-                                alt="skills-img">
-                        </div>
-                        <h3 class="skills__h3-style skills__speaking_h3-style">Speaking</h3>
-                        <p class="skills__p-style skills__speaking_p-style-1">Improve your English skills and
-                            confidence.
-                            Live classes and interactive lessons online. 20% extra free for a limited time only</p>
-                        <p class="skills__p-style skills__speaking_p-style-2">Learn English online and improve your
-                            skills
-                            through our high-quality courses and resources – all designed for adult language learners.
-                        </p>
-                        <button class="button__style skills__speaking_button__style">Learn more</button>
+            <div class="hero-text">
+                <h1 class="h1-style hero-h1">
+                    Learn <br>
+                    Any Foreign <br>
+                    Language
+                </h1>
+
+                <!-- Маленькая иконка лампочки -->
+                <img class="lightbulb-icon" src="./images/header__icon_lamp.png" alt="Lightbulb">
+
+
+                <p class="p-style24 hero-p">With our teachers who write a program for <br>
+                    each student, you will be able to make your <br>
+                    first sketch after the first lesson.</p>
+                <button class="cta-btn hero-btn">Get started</button>
+            </div>
+            <div class="hero-image">
+                <!-- Девушка в наушниках на фоне карты мира -->
+                <img src="./images/header__image.png" alt="Girl learning languages">
+            </div>
+
+        </section>
+
+        <!-- СЕКЦИЯ НАВЫКИ -->
+        <section id="skills" class="skills container">
+            <h2 class="section-title  skills_h2">Skills</h2>
+
+            <div class="skills__grid-box">
+
+                <div class="skills__card skills__speaking-card">
+
+                    <div class="skills__image-box skills__speaking-image-box">
+                        <img class="skills__speaking-image-file" src="./images/skills-speaking.png" alt="skills-img">
                     </div>
+                    <h3 class="skills__h3-style skills__speaking_h3-style">Speaking</h3>
+                    <p class="p-style16 skills__speaking_p">
+                        Improve your English skills and confidence. <br>
+                        Live classes and interactive lessons online. <br>
+                        20% extra free for a limited time only <br>
+                        <br>
+                        Learn English online and improve your <br>
+                        skills through our high-quality courses <br>
+                        and resources – all designed for adult <br>
+                        language learners.
+                    </p>
+                    <button class="button__style skills__button__style skills__speaking_button__style">Learn
+                        more</button>
+                </div>
 
-                    <div class="skills__card skills__writing-card">
-                        <div class="skills__image-box skills__writing-image-box">
-                            <img class="skills__writing-image-file" src="./images/skills-section's__2-nd_image.png"
-                                alt="skills-img">
-                        </div>
-                        <h3 class="skills__h3-style skills__writing_h3-style">Writing</h3>
-                        <p class="skills__p-style skills__writing_p-style">One of the most important and extensive areas
-                            of
-                            natural science, the science that studies substances, also their composition</p>
-                        <button class="button__style skills__button__style skills__writing_button__style">Learn
+
+
+                <div class="skills__card skills__writing-card">
+                    <div class="skills__image-box skills__writing-image-box">
+                        <img class="skills__writing-image-file" src="./images/skills-writing.png" alt="skills-img">
+                    </div>
+                    <h3 class="skills__h3-style skills__writing_h3-style">Writing</h3>
+                    <p class="p-style16 skills__writing_p-style">One of the most important and extensive areas
+                        of
+                        natural science, the science that studies substances, also their composition</p>
+                    <button class="button__style skills__button__style skills__writing_button__style">Learn
+                        more</button>
+                </div>
+
+
+                <div class="skills__card skills__reading-card">
+                    <div class="skills__image-box skills__reading-image-box">
+                        <img class="skills__reading-image-file" src="./images/skills-reading.png" alt="skills-img">
+                    </div>
+                    <h3 class="skills__h3-style skills__reading_h3-style">Reading</h3>
+                    <p class="p-style16 skills__reading_p-style">perception and response actions of the user
+                        resulting from the use and/or up coming use of the product, system or service</p>
+                    <button class="button__style skills__button__style skills__reading_button__style">Learn
+                        more</button>
+                </div>
+
+                <div class="skills__card skills__listening-card-flex">
+                    <div class="skills__listening-card">
+                        <h3 class="h3-style skills__listening_h3-style">Listening</h3>
+                        <p class="p-style16 skills__listening_p-style">Here you can find activities to
+                            practise
+                            your listening skills. Listening will help you to improve your understanding</p>
+                        <button class="button__style skills__button__style skills__listening_button__style">Learn
                             more</button>
                     </div>
 
 
-                    <div class="skills__card skills__reading-card">
-                        <div class="skills__image-box skills__reading-image-box">
-                            <img class="skills__reading-image-file" src="./images/skills-section's__3-rd_image.png"
-                                alt="skills-img">
-                        </div>
-                        <h3 class="skills__h3-style skills__reading_h3-style">Reading</h3>
-                        <p class="skills__p-style skills__reading_p-style">perception and response actions of the user
-                            resulting from the use and/or up coming use of the product, system or service</p>
-                        <button class="button__style skills__button__style skills__reading_button__style">Learn
-                            more</button>
-                    </div>
-
-                    <div class="skills__card skills__listening-card-flex">
-                        <div class="skills__listening-card">
-                            <h3 class="skills__h3-style skills__listening_h3-style">Listening</h3>
-                            <p class="skills__p-style skills__listening_p-style">Here you can find activities to
-                                practise
-                                your listening skills. Listening will help you to improve your understanding</p>
-                            <button class="button__style skills__button__style skills__listening_button__style">Learn
-                                more</button>
-                        </div>
-
-
-                        <div class="skills__image-box skills__listening-image-box">
-                            <img class="skills__listening-image-file" src="./images/skills-section's__4-th_image.png"
-                                alt="skills-img">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="about_us" id="about_us">
-        <div class="container-alignment">
-            <div class="container">
-                <h2 class="h2-styles about_us__headline_text-h2">About Us</h2>
-                <div class="about_us__flex">
-                    <div class="about_us__text-box">
-                        <p class="about_us__text-p about_us__text-p_alignment">The model offers a framework for
-                            discussing
-                            problems related to the user's experience, as well as possible ways and means of solving
-                            them.
-                            Application development begins at the top level (strategy), where the future software
-                            product is
-                            described quite abstractly from the point of view of the expectations of both users and the
-                            customer.</p>
-                        <div class="about_us__the_number__flex-box">
-                            <div class="about_us__the_number_of-Pupils__text-box">
-
-                                <h2 class="h2-styles about_us__the_number_text-h2 about_us__the_number-Pupils_text-h2">
-                                    800
-                                </h2>
-
-                                <p class="about_us__text-p about_us__the_number-Pupils_text-p">Pupils</p>
-                            </div>
-
-                            <div class="about_us__the_number_of-Teachers__text-box">
-                                <h2
-                                    class="h2-styles about_us__the_number_text-h2 about_us__the_number-Teachers_text-h2">
-                                    18
-                                </h2>
-
-                                <p class="about_us__text-p about_us__the_number-Teachers_text-p">Teachers</p>
-                            </div>
-                            <div class="about_us__the_number_of-Foreign-lang__text-box">
-                                <h2 class="h2-styles about_us__the_number-Foreign-lang_text-h2">6</h2>
-
-                                <p class="about_us__text-p about_us__the_number-Foreign-lang_text-p">Foreign languages
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about_us__image-box">
-                        <img class="about_us-image-file" src="./images/AboutUs_section's_image.png" alt="AboutUs_img">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing" id="pricing">
-        <div class="container-alignment">
-            <div class="container">
-                <h2 class="h2-styles pricing__headline_text-h2">Pricing</h2>
-                <div class="pricing__flex">
-                    <div class="pricing__card pricing__card_self-study">
-                        <img class="pricing-card__image_self-study" src="./images/pricing-section's__1-st_image.png"
-                            alt="pricing-section's_image">
-                        <h3 class="pricing__h3-style pricing__self-study_h3-style">Self-study online course</h3>
-
-                        <p class="pricing__p-style pricing__self-study_p-style">Start learning English online in live
-                            classes with qualified EC teachers and students from all over the world.</p>
-
-                        <button class="button__style pricing-card__button pricing-card__button_self-study"><span
-                                class="pricing-card__button_span-text-stye pricing-card__button_self-study_span-text_alignment">£5.99</span>
-                            per month</button>
-                    </div>
-                    <div class="pricing__card">
-                        <img class="pricing-card__image_live" src="./images/pricing-section's__2-nd_image.png"
-                            alt="pricing-section's_image">
-                        <h3 class="pricing__h3-style pricing__live_h3-style">Live online classes</h3>
-
-                        <p class="pricing__p-style pricing__live_p-style">Interactive group classes with expert
-                            teachers. Free 7-day trial</p>
-
-                        <button class="button__style pricing-card__button pricing-card__button_Live"><span
-                                class="pricing-card__button_span-text-stye pricing-card__button_Live_span-text_alignment">£12.99</span>
-                            per month</button>
-                    </div>
-                    <div class="pricing__card">
-                        <img class="pricing-card__image_personal-tuition"
-                            src="./images/pricing-section's__3-rd_image.png" alt="pricing-section's_image">
-                        <h3 class="pricing__h3-style pricing__personal-tuition_h3-style">Personal Tuition</h3>
-
-                        <p class="pricing__p-style pricing__personal-tuition_p-style">Online one-to-one English tutoring
-                            –
-                            enjoy our first session for only $1</p>
-
-                        <button class="button__style pricing-card__button pricing-card__button_personal-tuition"><span
-                                class="pricing-card__button_span-text-stye pricing-card__button_personal-tuition_span-text_alignment">£20.99</span>
-                            per month</button>
+                    <div class="skills__image-box skills__listening-image-box">
+                        <img class="skills__listening-image-file" src="./images/skills-listening.png" alt="skills-img">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="contact_us" id="contacts">
-        <div class="container-alignment">
-            <div class="container">
-                <h2 class="h2-styles contact_us__headline_text-h2">Contact Us</h2>
-                <div class="contact_us__flex">
-                    <div class="contact_us__image-box">
-                        <img class="contact_us__image__file" src="./images/ContactUs_section's_image.png"
-                            alt="ContactUs_image">
+
+
+
+
+        </section>
+
+        <!-- СЕКЦИЯ О НАС -->
+        <section id="about" class="about container">
+            <div class="about-text">
+                <h2 class="section-title about_h2">About Us</h2>
+                <p class="about_us__text-p about_us__text-p_alignment">
+                    The model offers a framework for discussing problems related <br>
+                    to the user's experience, as well as possible ways and means of <br>
+                    solving them. Application development begins at the top level <br>
+                    (strategy), where the future software product is described quite <br>
+                    abstractly from the point of view of the expectations of both <br>
+                    users and the customer.</p>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <h2 class="h2-styles about_us__the_number_text-h2 Pupils_text-h2">800</h2>
+
+                        <p class="p-style Pupils_text-p">Pupils</p>
+
                     </div>
-                    <div class="contact_us__text-box">
-                        <p class="pricing__p-style contact_us__offer_p-style">Discover your current English level by
-                            taking
-                            our free online English test.Sign up to our newsletter for learning tips and free resources
+                    <div class="stat-item">
+                        <h2 class="h2-styles about_us__the_number_text-h2 Teachers_text-h2">
+                            18
+                        </h2>
+
+                        <p class="p-style Teachers_text-p">Teachers</p>
+
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="h2-styles Foreign-lang_text-h2">6</h2>
+
+                        <p class="p-style Foreign-lang_text-p">Foreign languages
                         </p>
-                        <form class="contact_us__form-flex">
-                            <input class="contact_us__input" type="email" placeholder="Enter Your E-mail">
-                            <button class="button__style contact_us__button">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container-alignment">
-            <div class="container">
-                <div class="footer-line"></div>
-                <div class="footer__flex">
-                    <a class="footer__logo-box" href="#home">
-                        <img class="logo-file" src="./images/logo_Britlex.svg" alt="logo">
-                    </a>
-                    <div class="footer__nav-bar-box">
-                        <ul class="footer__nav-bar">
-                            <li class="header__main_text-p footer__nav-bar-item"><a
-                                    class="footer__nav-bar-link button__style" href="#">Terms and Conditions</a></li>
-                            <li class="header__main_text-p footer__nav-bar-item"><a
-                                    class="footer__nav-bar-link button__style" href="#">• Privacy Policy</a></li>
-                            <li class="header__main_text-p footer__nav-bar-item"><a
-                                    class="footer__nav-bar-link button__style" href="#">• Cookie Policy</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="about-image">
+                <!-- Иллюстрация с горой и флагом -->
+                <img src="./images/Business competition-bro 1.png" alt="Climbing the mountain of success">
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ ЦЕНЫ -->
+        <section id="pricing" class="pricing container">
+            <h2 class="section-title pricing_h2">Pricing</h2>
+
+            <div class="pricing-grid">
+                <!-- Тариф 1 -->
+                <div class="pricing-card">
+                    <img class="img-Self-study" src="./images/pricing-self-study.png" alt="Self-study online course">
+
+                    <h3 class="h3-style pricing__self-study_h3-style">Self-study online course</h3>
+
+                    <p class="p-style pricing__self-study_p-style">Start learning English online in live
+                        classes with
+                        qualified EC teachers and students from all
+                        over the world.</p>
+                    <div class="price-tag price-tag_text price1">£5.99 <span>per month</span></div>
+                </div>
+
+                <!-- Тариф 2 -->
+                <div class="pricing-card">
+                    <img class="img-Live_online" src="./images/pricing-live.png" alt="Live online classes">
+                    <h3 class="h3-style pricing__live_h3-style">Live online classes</h3>
+
+                    <p class="p-style pricing__live_p-style">Interactive group classes with expert teachers.
+                        Free 7-day trial</p>
+
+                    <div class=" price-tag price-tag_text price2">£12.99 <span>per month</span>
+                    </div>
+                </div>
+
+                <!-- Тариф 3 -->
+                <div class="pricing-card">
+                    <img class="img-Personal_Tuition" src="./images/pricing-personal.png" alt="Personal Tuition">
+
+                    <h3 class="h3-style pricing__personal-tuition_h3-style">Personal Tuition</h3>
+
+                    <p class="p-style pricing__personal-tuition_p-style">Online one-to-one English tutoring –
+                        enjoy our first session for only $1</p>
+
+                    <div class="price-tag price-tag_text price3">£20.99 <span>per month</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ КОНТАКТЫ -->
+        <section id="contacts" class="contacts container">
+            <div class="contact-image">
+                <!-- Человек, бегущий с бумажным самолетиком -->
+                <img src="./images/ContactUs_section's_image.png" alt="Running with paper plane">
+            </div>
+
+            <div class="contact-text">
+                <h2 class="section-title section-title_h2">Contact Us</h2>
+
+                <p class="p-style p-Contacts ">Discover your current English level by taking our free online English
+                    test.
+                    Sign <br>
+                    up to our newsletter for learning tips and free resources</p>
+
+                <form class="subscribe-form">
+                    <input class="contact_us__input" type="email" placeholder="Enter Your E-mail" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div class="footer-line"></div>
+
+    <!-- ПОДВАЛ САЙТА -->
+    <footer class="footer container">
+
+        <div class="footer-logo">
+            <img src="./images/logo_Britlex.svg" alt="Britlex Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms and Conditions</a>
+            <span>•</span>
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Cookie Policy</a>
         </div>
     </footer>
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
 
-
-
-    <div class="sidenav-overlay"></div>
-    <div class="drag-target"></div>
-    <div id="tr-popup" class="tr-popup" translate="no" data-hidden="true" data-invalid="true" data-disabled="true"
-        lang="ru">
-        <div class="tr-popup__block"><span class="tr-popup__title_original">Оригинальный текст:</span> <span
-                class="tr-popup__value"></span></div>
-        <div class="tr-popup__block tr-popup__block_a"><span class="tr-popup__link tr-popup__link_suggest"
-                data-action="expand">Предложить перевод</span><a href="https://translate.yandex.ru"
-                class="tr-popup__link tr-popup__link_service" target="_blank" data-action="navigate"><span
-                    class="tr-popup__logo tr-popup__logo_company"></span><span
-                    class="tr-popup__logo tr-popup__logo_service"></span></a></div>
-        <div class="tr-popup__block tr-popup__block_b"><textarea class="tr-popup__input" spellcheck="false"
-                autocapitalize="off" autocorrect="off" autocomplete="off" maxlength="1000"></textarea>
-            <div class="tr-popup__block tr-popup__block_submit"><span role="button"
-                    class="tr-popup__button tr-popup__button_submit" data-action="send">Отправить</span></div>
-            <div class="tr-popup__overlay tr-popup__overlay_submitted">Спасибо, перевод отправлен</div>
-        </div><span role="button" class="tr-popup__button tr-popup__button_close" data-action="clickClose"></span><span
-            role="button" class="tr-popup__button tr-popup__button_menu" data-action="clickMenu"><span
-                class="tr-popup__menu" data-action="disablePopup">Отключить подсказку с оригинальным
-                текстом</span></span><span class="tr-popup__arrow"></span>
-    </div>
+    <!-- Подключение JS для работы мобильного меню -->
+    <script src="./js/main.js"></script>
+    <script src="./js/materialize.min.js"></script>
 
 </body>
 
